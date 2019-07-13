@@ -8,8 +8,9 @@
 /*CHANGE THE CONTENT-BOX TO BORDER-BOX */
 
 *{
-box-sizing: border-box;
-}
+  box-sizing: border-box;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  }
 
   /*RED BORDER AROUND WEBSITE*/
 .allered-body
