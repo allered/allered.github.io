@@ -5,6 +5,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+/*CHANGE THE CONTENT-BOX TO BORDER-BOX */
+
+*{
+box-sizing: border-box;
+}
 
   /*RED BORDER AROUND WEBSITE*/
 .allered-body
