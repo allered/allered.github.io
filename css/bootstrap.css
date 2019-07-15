@@ -72,28 +72,6 @@ font-family: system, -apple-system, BlinkMacSystemFont,"Helvetica Neue", "Lucida
   margin-top: -15px;
 }
 
-  /*VIEW ON SMARTPHONE*/
-
-@media only screen and (max-width:568px)
-{
-.allered-brand 
-{
-  font-size: 1.6em !important;
-  letter-spacing: .04px !important;
-  margin-left: -20px;
-}
-.allered-subbrand
-{
-  font-size: 0.7em !important;
-  letter-spacing: .04px !important;
-  margin-top: -15px;
-  margin-left: -20px;
-}
-}
-
-
-
-
 .allered-text
 {
   color: #0B0B0B !important;
@@ -153,6 +131,50 @@ font-family: system, -apple-system, BlinkMacSystemFont,"Helvetica Neue", "Lucida
   max-width: 100% !important;
   padding-top: 20px;
 }
+
+  /*VIEW ON SMARTPHONE*/
+
+  @media only screen and (max-width:568px)
+  {
+
+  .allered-brand 
+  {
+    font-size: 1.6em !important;
+    letter-spacing: .04px !important;
+    margin-left: -20px;
+  }
+
+  .allered-subbrand
+  {
+    font-size: 0.7em !important;
+    letter-spacing: .04px !important;
+    margin-top: -12px;
+    margin-left: -20px;
+  }
+  
+  .allered-footer{
+    font-size: 0.6em !important;
+    letter-spacing: .04px !important;
+  }
+
+  .allered-social
+{
+  height: 20px;
+  width: 20px;
+}
+
+.navbar-toggler
+{
+  width: 35px !important;
+  height: 35px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: 0px !important;
+  background-image: 
+}
+
+  }
+
 
 
 :root {
