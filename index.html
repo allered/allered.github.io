@@ -23,9 +23,14 @@
     </a>
 
     <!-- MENU SECTION-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <button class="navbar-toggler allered-hamburger" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    
+          <span class="allered-hamburger__line allered-hamburger__line--top"></span> <!-- passo una classe e sempre la stessa classe con modificatore -->
+          <span class="allered-hamburger__line allered-hamburger__line--middle"></span>
+          <span class="allered-hamburger__line allered-hamburger__line--bottom"></span>
+
+      
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav allered-menu">
@@ -99,15 +104,10 @@
 
     <!-- Link a JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- Link a javascript -->
     <script src="js/bootstrap.js"></script>
-    <script type="text/javascript">
-    
-
-var navItem = document.querySelectorAll('.allered-item');
-console.log(navItem);
-
-    </script>
+    <script src="js/app.js"></script>
 
 </body>
 

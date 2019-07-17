@@ -86,6 +86,51 @@
     width: 23px;
 }
 
+.allered-hamburger {
+    overflow: hidden;
+    width: 30px;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    outline: none !important;
+}
+
+.allered-hamburger.collapsed .allered-hamburger__line--top,
+.allered-hamburger.collapsed .allered-hamburger__line--middle,
+.allered-hamburger.collapsed .allered-hamburger__line--bottom
+{
+    transform: none;
+    opacity: 1;
+}
+
+.allered-hamburger__line {
+    width: 30px;
+    height: 3px;
+    background: var(--allered-black);
+    border-radius: 4px;
+    transition: all .5s cubic-bezier(.08, .81, .87, .71);
+}
+
+.allered-hamburger__line--top {
+  
+    transform: rotate(45deg) translate(3px,5px); 
+}
+
+.allered-hamburger__line--middle {
+    transform: rotate(495deg) translate(0px); 
+}
+
+.allered-hamburger__line--bottom {
+    transform-origin: bottom right;
+    transform: rotate(45deg);
+    opacity: 0; 
+}
+
+
 .allered-navbar {}
 
 /*MENU ITEMS INACTIVE COLOR*/
@@ -151,14 +196,4 @@
         height: 20px;
         width: 20px;
     }
-
-    .navbar-toggler {
-        width: 35px !important;
-        height: 35px !important;
-        padding: 0px !important;
-        margin: 0px !important;
-        border: 0px !important;
-        background-image:
-    }
-
 }
