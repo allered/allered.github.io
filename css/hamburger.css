@@ -9,6 +9,7 @@
     padding: 0px 0px;
     padding-top: 10px;
     display: inline-block;
+    vertical-align: middle;
     cursor: pointer;
     transition-property: opacity, filter;
     transition-duration: 0.15s;
@@ -45,7 +46,7 @@
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
       width: 40px;
       height: 4px;
-      background-color: #000;
+      background-color: #0B0B0B;
       border-radius: 4px;
       position: absolute;
       transition-property: transform;
