@@ -9,6 +9,7 @@
   <title>Alessandro Rossi - Photographer | Web Designer</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/hamburger.css">
 </head>
 
 <body class="allered-border allered-body">
@@ -23,15 +24,25 @@
     </a>
 
     <!-- MENU SECTION-->
-    <button class="navbar-toggler allered-hamburger" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    
-          <span class="allered-hamburger__line allered-hamburger__line--top"></span> <!-- passo una classe e sempre la stessa classe con modificatore -->
-          <span class="allered-hamburger__line allered-hamburger__line--middle"></span>
-          <span class="allered-hamburger__line allered-hamburger__line--bottom"></span>
+    <button class="navbar-toggler hamburger hamburger--spring" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>  
 
+
+
+    <!-- <button class="navbar-toggler allered-hamburger" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
+    
+          <!-- <span class="allered-hamburger__line allered-hamburger__line--top"></span> --> <!-- passo una classe e sempre la stessa classe con modificatore -->
+          <!-- <span class="allered-hamburger__line allered-hamburger__line--middle"></span>
+          <span class="allered-hamburger__line allered-hamburger__line--bottom"></span>
+ 
       
-    </button>
+     </button> -->
+
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav allered-menu">
         <li class="nav-item allered-item active">
@@ -48,6 +59,7 @@
         </li>
       </ul>
     </div>
+ 
   </nav>
 
 
@@ -103,6 +115,17 @@
     <!-- Link a javascript -->
     <script src="js/bootstrap.js"></script>
     <script src="js/app.js"></script>
+    <script>
+    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+    </script>
 
 </body>
 

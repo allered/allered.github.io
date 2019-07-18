@@ -1,6 +1,6 @@
 :root {
-    --allered: #D70909;
-    --allered-black: #0B0B0B;
+    --allered-red: #D70909;
+    --allered-red-black: #0B0B0B;
 }
 
 
@@ -10,7 +10,6 @@
 }
 
 /*FIXING NAVBAR MARGINS */
-
 .navbar {
     margin-left: 25px;
     margin-right: 25px;
@@ -18,7 +17,6 @@
 }
 
 /*RED BORDER AROUND WEBSITE*/
-
 .allered-body {
     background-color: #FBFBFB;
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
@@ -27,19 +25,18 @@
 .allered-border {
     padding: 5px;
     overflow-x: hidden;
-    /* For Opera */
     -webkit-box-shadow:
-        inset var(--allered) 0 0 0 5px,
-        inset var(--allered) 0 0 0 1px,
-        inset var(--allered) 0 0 0 8px;
+        inset var(--allered-red) 0 0 0 5px,
+        inset var(--allered-red) 0 0 0 1px,
+        inset var(--allered-red) 0 0 0 8px;
     -moz-box-shadow:
-        inset var(--allered) 0 0 0 5px,
-        inset var(--allered) 0 0 0 1px,
-        inset var(--allered) 0 0 0 8px;
+        inset var(--allered-red) 0 0 0 5px,
+        inset var(--allered-red) 0 0 0 1px,
+        inset var(--allered-red) 0 0 0 8px;
     box-shadow:
-        inset var(--allered) 0 0 0 5px,
-        inset var(--allered) 0 0 0 1px,
-        inset var(--allered) 0 0 0 8px;
+        inset var(--allered-red) 0 0 0 5px,
+        inset var(--allered-red) 0 0 0 1px,
+        inset var(--allered-red) 0 0 0 8px;
 }
 
 .allered-brand {
@@ -133,14 +130,19 @@
 
 .allered-navbar {}
 
-/*MENU ITEMS INACTIVE COLOR*/
+
+
+/*
+MENU ITEMS INACTIVE COLOR
+HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOTSTRAP
+*/
 .allered-navbar .allered-menu .allered-item .allered-link {
     color: var(--allered-black);
 }
 
-/*WHEN ITEM IS ACTIVE*/
+/*WHEN MENU ITEM IS ACTIVE*/
 .allered-navbar .allered-menu .allered-item.active .allered-link {
-    color: var(--allered);
+    color: var(--allered-red);
 }
 
 .allered-menu {}
@@ -171,7 +173,6 @@
 }
 
 /*VIEW ON SMARTPHONE*/
-
 @media only screen and (max-width:568px) {
 
     .allered-brand {
