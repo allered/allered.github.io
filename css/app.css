@@ -176,13 +176,13 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 @media only screen and (max-width:568px) {
 
     .allered-brand {
-        font-size: 1.6em !important;
+        font-size: 1.4em !important;
         letter-spacing: .04px !important;
         margin-left: -20px;
     }
 
     .allered-subbrand {
-        font-size: 0.7em !important;
+        font-size: 0.6em !important;
         letter-spacing: .04px !important;
         margin-top: -12px;
         margin-left: -20px;
