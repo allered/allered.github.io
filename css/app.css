@@ -1,6 +1,7 @@
 :root {
     --allered-red: #D70909;
     --allered-red-black: #0B0B0B;
+    --allered-framesize: 8px;
 }
 
 
@@ -18,70 +19,96 @@
 
 /*RED BORDER AROUND WEBSITE*/
 .allered-body {
+    /*BACKGROUND*/
     background-color: #FBFBFB;
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+    /*POSIZIONE DI PARTENZA DELLO SFONDO - COORDINATA y*/
+    top: 0;
+    /*POSIZIONE DI PARTENZA DELLO SFONDO - COORDINATA x*/
+    left: 0;
+    /* FORZA LA POSIZIONE DEL FRAME INDIPENDENTEMENTE DAGLI ALTRI CONTENUTI*/
+    position: fixed;
+    /* VALORE 3 PER STARE SOPRA AL FRAME*/
+    z-index: 3;
+    /*SETTO L'ALTEZZA E LA LARGHEZZA DEL BODY AL 100 MENO LA DIMENSIONE DEL BORDO PER ENTRAMBI I LATI*/
+    height: calc(100vh - var(--allered-framesize)*2);
+    width: calc(100vw - var(--allered-framesize)*2);
+    margin: var(--allered-framesize);
+    /*IMPEDISCE CHE IL CONTENUTO CHE ESCE DAL DIV IN ORIZZIONTALE SI VEDA*/
+    overflow-x: hidden;
+    /*PERMETTE CHE IL CONTENUTO CHE ESCE DAL DIV IN VERTICALE SI VEDA SCROLLANDO*/
+    overflow-y: auto;
 }
 
-.allered-border {
-    padding: 5px;
-    overflow-x: hidden;
-    -webkit-box-shadow:
-        inset var(--allered-red) 0 0 0 5px,
-        inset var(--allered-red) 0 0 0 1px,
-        inset var(--allered-red) 0 0 0 8px;
-    -moz-box-shadow:
-        inset var(--allered-red) 0 0 0 5px,
-        inset var(--allered-red) 0 0 0 1px,
-        inset var(--allered-red) 0 0 0 8px;
-    box-shadow:
-        inset var(--allered-red) 0 0 0 5px,
-        inset var(--allered-red) 0 0 0 1px,
-        inset var(--allered-red) 0 0 0 8px;
+.allered-frame {
+    /*BACKGROUND RED*/
+    background-color: var(--allered-red);
+    /* FORZA LA POSIZIONE DEL FRAME INDIPENDENTEMENTE DAGLI ALTRI CONTENUTI*/
+    position: fixed;
+    /* VALORE DELL'ASSE z CHE INDICA CHE HA UNA PROFONDITA', IL BODY HA VALORE 3 PER STARE SOPRA*/
+    z-index: 2;
+    /*POSIZIONE DI PARTENZA DELLO SFONDO - COORDINATA y*/
+    top: 0;
+    /*POSIZIONE DI PARTENZA DELLO SFONDO - COORDINATA x*/
+    left: 0;
+    /* DIMENSIONE FRAME 100% DELLA FINESTRA IN ALTEZZA*/
+    height: 100vh;
+    /* DIMENSIONE FRAME 100% DELLA FINESTRA IN LARGHEZZA*/
+    width: 100vw;
 }
 
 .allered-brand {
-    color: var(--allered-black) !important;
-    font-family: "Helvetica Neue", Arial, sans-serif !important;
-    font-weight: 700 !important;
-    font-style: normal !important;
-    font-size: 2.4em !important;
-    letter-spacing: .04px !important;
+    color: var(--allered-black);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.4em;
+    letter-spacing: .04px;
 
 }
 
 .allered-subbrand {
-    display: flexbox !important;
-    color: var(--allered-black) !important;
-    font-family: "Helvetica Neue", Arial, sans-serif !important;
-    font-weight: 600 !important;
-    font-style: normal !important;
-    font-size: 0.8em !important;
-    letter-spacing: .04px !important;
+    display: flexbox;
+    color: var(--allered-black);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.8em;
+    letter-spacing: .04px;
     margin-top: -15px;
 }
 
 .allered-text {
-    color: var(--allered-black) !important;
-    font-family: "Helvetica Neue", Arial, sans-serif !important;
-    font-style: normal !important;
-    font-size: 0.8em !important;
-    letter-spacing: .04px !important;
+    color: var(--allered-black);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-style: normal;
+    font-size: 0.8em;
+    letter-spacing: .04px;
 }
 
 .allered-footer {
-    color: var(--allered-black) !important;
-    font-family: "Helvetica Neue", Arial, sans-serif !important;
-    font-weight: 500 !important;
-    font-style: normal !important;
-    font-size: 0.8em !important;
-    letter-spacing: .04px !important;
-    text-align: center !important;
+    color: var(--allered-black);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.8em;
+    letter-spacing: .04px;
+    text-align: center;
 }
 
 .allered-social {
+    display: inline-flex;
+    padding: 10px 0px;
+}
+
+.allered-social__image {
     height: 23px;
     width: 23px;
 }
+
+.allered-footer__socials {}
+
+.allered-footer__identity {}
 
 .allered-hamburger {
     overflow: hidden;
@@ -93,7 +120,7 @@
     align-items: center;
     border: 0;
     padding: 0;
-    outline: none !important;
+    outline: none;
 }
 
 .allered-hamburger.collapsed .allered-hamburger__line--top,
@@ -147,11 +174,11 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 .allered-menu {}
 
 .allered-item {
-    color: var(--allered-black) !important;
-    font-family: "Helvetica Neue", Arial, sans-serif !important;
+    color: var(--allered-black);
+    font-family: "Helvetica Neue", Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 0.8em !important;
-    font-weight: 500 !important;
+    font-size: 0.8em;
+    font-weight: 500;
 
 }
 
@@ -172,7 +199,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 .allered-image {
     vertical-align: middle;
     text-align: center;
-    max-width: 100% !important;
+    max-width: 100%;
     padding-top: 20px;
 }
 
@@ -180,21 +207,21 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 @media only screen and (max-width:568px) {
 
     .allered-brand {
-        font-size: 1.4em !important;
-        letter-spacing: .04px !important;
+        font-size: 1.4em;
+        letter-spacing: .04px;
         margin-left: -20px;
     }
 
     .allered-subbrand {
-        font-size: 0.6em !important;
-        letter-spacing: .04px !important;
+        font-size: 0.6em;
+        letter-spacing: .04px;
         margin-top: -12px;
         margin-left: -20px;
     }
 
     .allered-footer {
-        font-size: 0.6em !important;
-        letter-spacing: .04px !important;
+        font-size: 0.6em;
+        letter-spacing: .04px;
     }
 
     .allered-social {
