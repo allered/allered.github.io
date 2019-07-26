@@ -12,7 +12,6 @@
 
 /*FIXING NAVBAR MARGINS */
 .navbar {
-    position: fixed;
     margin-left: 25px;
     margin-right: 25px;
     margin-top: 5px;
@@ -155,7 +154,9 @@
 }
 
 
-.allered-navbar {}
+.allered-navbar {
+position:fixed;
+}
 
 
 
