@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body class="allered-frame">
@@ -65,28 +66,29 @@
 
       <!-- SINGLE COLUMN -->
       <div class="row">
-
         <div class="col-md-6 offset-md-3">
-          <img class="allered-image" src="portrait/Alice.jpg" alt="Red Woman">
+          <br>
+          <br>
+          <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/alleredph@gmail.com" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Name</label>
+              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+              <label for="email-address">Email</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <label for="telephone">Phone (Optional)</label>
+              <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+              <label for="complaint">Message</label>
+              <textarea rows="6" name="complaint" id="complaint" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+            </fieldset>
+            <input type="submit" value="Send">
+          </form>
+          <br>
+          <br>
         </div>
 
       </div>
 
-      <!-- DOUBLE COLUMN -->
-      <div class="row">
-
-        <div class="col-md-3 offset-md-3">
-          <img class="allered-image" src="portrait/Alice.jpg" alt="Red Woman">
-        </div>
-
-        <div class="col-md-3">
-          <img class="allered-image" src="portrait/Alice.jpg" alt="Red Woman">
-        </div>
-
-      </div>
-
-      <br>
-      <br>
 
 
       <!-- FOOTER -->
