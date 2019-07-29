@@ -90,7 +90,7 @@
 
 .allered-footer {
     color: var(--allered-black);
-    font-style: uppercase;
+    text-transform: uppercase;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -207,7 +207,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 }
 
 .allered-image__caption {
-    font-style: uppercase;
+    text-transform: uppercase;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
     font-style: normal;
