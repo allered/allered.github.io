@@ -154,8 +154,7 @@
 }
 
 
-.allered-navbar {
-}
+.allered-navbar {}
 
 
 
@@ -202,6 +201,16 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     text-align: center;
     max-width: 100%;
     padding-top: 20px;
+}
+
+.allered-image__caption {
+    font-style: uppercase;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.7em;
+    letter-spacing: .04px;
+    text-align: left;
 }
 
 /*VIEW ON SMARTPHONE*/
