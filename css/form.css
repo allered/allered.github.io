@@ -7,7 +7,12 @@
 }
 
 
-
+#fs-frm
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 #fs-frm input,
 #fs-frm select,
@@ -68,6 +73,7 @@
 #fs-frm [type="button"],
 #fs-frm [type="submit"],
 #fs-frm [type="reset"] {
+    margin-top: 3em;
     width: 20%;
     cursor: pointer;
     -webkit-appearance: button;
