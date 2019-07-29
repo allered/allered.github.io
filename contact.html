@@ -71,14 +71,14 @@
           <br>
           <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/alleredph@gmail.com" method="post">
             <fieldset id="fs-frm-inputs">
+              <input type="text" name="name" id="full-name" placeholder=" " required="">
               <label for="full-name">Name</label>
-              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+              <input type="email" name="_replyto" id="email-address" placeholder=" " required="">
               <label for="email-address">Email</label>
-              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <input type="telephone" name="telephone" id="telephone" placeholder=" ">
               <label for="telephone">Phone (Optional)</label>
-              <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+              <textarea rows="6" name="complaint" id="complaint" placeholder=" " required=""></textarea>
               <label for="complaint">Message</label>
-              <textarea rows="6" name="complaint" id="complaint" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
               <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
             </fieldset>
             <input type="submit" value="Send">
