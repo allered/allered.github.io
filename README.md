@@ -1,2 +1,4 @@
 # allered.me
- portfolio website
+ALESSANDRO ROSSI
+Photographer | Web Designer
+Portfolio Website
