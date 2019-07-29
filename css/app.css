@@ -108,9 +108,9 @@
     width: 23px;
 }
 
-.allered-footer__socials {}
+/* .allered-footer__socials {}
 
-.allered-footer__identity {}
+.allered-footer__identity {} */
 
 .allered-hamburger {
     overflow: hidden;
@@ -156,7 +156,7 @@
 }
 
 
-.allered-navbar {}
+/* .allered-navbar {} */
 
 
 
@@ -173,7 +173,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     color: var(--allered-red);
 }
 
-.allered-menu {}
+/* .allered-menu {} */
 
 .allered-item {
     color: var(--allered-black);
