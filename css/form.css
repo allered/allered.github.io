@@ -7,8 +7,7 @@
 }
 
 
-#fs-frm
-{
+#fs-frm {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -34,7 +33,7 @@
     margin: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
-    
+
 }
 
 #fs-frm label,
@@ -61,7 +60,7 @@
     background-color: var(--allered-white);
     outline-style: solid;
     outline-width: thin;
-    outline-color:var(--allered-red);
+    outline-color: var(--allered-red);
     outline-offset: -1px;
 }
 
@@ -74,7 +73,6 @@
 #fs-frm [type="button"],
 #fs-frm [type="submit"],
 #fs-frm [type="reset"] {
-    margin-top: 3em;
     width: 20%;
     cursor: pointer;
     -webkit-appearance: button;

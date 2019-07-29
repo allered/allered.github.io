@@ -215,6 +215,12 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     text-align: left;
 }
 
+
+.allered-image__biography {
+    border: 3px solid red;
+    padding: 0;
+}
+
 /*VIEW ON SMARTPHONE*/
 @media only screen and (max-width:568px) {
 
