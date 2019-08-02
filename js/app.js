@@ -20,3 +20,4 @@ class Navbar { //Dichiaro la classe
 }
 
 new Navbar(document.querySelector('.allered-navbar')); //dichiaro un nuovo elemento di tipo Navbar (che esiste perchè ho creato la classe sopra )e al costruttore della classe gli passo come elemento del documento la navbar dell'html.
+

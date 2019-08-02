@@ -1,6 +1,6 @@
 :root {
     --allered-red: #D70909;
-    --allered-red-black: #0B0B0B;
+    --allered-black: #0B0B0B;
     --allered-framesize: 8px;
     --allered-white: #FBFBFB;
     --allered-fontfamily: "Helvetica Neue", Arial, sans-serif;
@@ -218,7 +218,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 
 
 .allered-image__biography {
-    border: 3px solid red;
+    border: 3px solid var(--allered-red);
     padding: 0;
 }
 
@@ -247,4 +247,27 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
         height: 20px;
         width: 20px;
     }
+}
+
+#allered-button {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding:0;
+    z-index: 3;
+    font-size: 0.75em;
+    font-weight: 500;
+    background-color: var(--allered-white);
+    color: var(--allered-black);
+    border-radius: 2px;
+    border: 3px solid var(--allered-red);
+    outline: none;
+    width: 60px;
+    height: 40px;
+}
+
+#allered-button:hover {
+    background-color: var(--allered-red);
+    color: var(--allered-white)
 }
