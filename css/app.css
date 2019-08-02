@@ -258,16 +258,30 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     z-index: 3;
     font-size: 0.75em;
     font-weight: 500;
-    background-color: var(--allered-white);
+    background-color: transparent;
     color: var(--allered-black);
-    border-radius: 2px;
-    border: 3px solid var(--allered-red);
+    /* border-radius: 2px;
+    border: 3px solid var(--allered-red); */
     outline: none;
+    border:none;
     width: 60px;
-    height: 40px;
+    height: 60px;
 }
 
-#allered-button:hover {
+/* #allered-button:hover {
     background-color: var(--allered-red);
     color: var(--allered-white)
-}
+} */
+
+
+.allered-arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid var(--allered-red);
+    border-right: 3px solid var(--allered-red);
+  }
+  
+  .allered-arrow__top {
+    transform: rotate(-45deg);
+  }
