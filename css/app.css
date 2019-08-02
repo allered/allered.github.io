@@ -255,13 +255,11 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     bottom: 0px;
     right: 20px;
     padding:0;
-    z-index: 3;
+    z-index: 99;
     font-size: 0.75em;
     font-weight: 500;
     background-color: transparent;
     color: var(--allered-black);
-    /* border-radius: 2px;
-    border: 3px solid var(--allered-red); */
     outline: none;
     border:none;
     width: 60px;
