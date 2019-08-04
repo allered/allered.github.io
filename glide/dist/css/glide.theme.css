@@ -1,9 +1,19 @@
+:root {
+  --allered-red: #D70909;
+  --allered-black: #0B0B0B;
+  --allered-framesize: 8px;
+  --allered-white: #FBFBFB;
+  --allered-fontfamily: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
 .glide__arrow {
   position: absolute;
   display: block;
   top: 50%;
   z-index: 2;
-  color: white;
+  color: var(--allered-red) ;
   text-transform: uppercase;
   padding: 9px 12px;
   background-color: transparent;

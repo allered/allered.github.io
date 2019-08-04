@@ -1,3 +1,13 @@
+:root {
+  --allered-red: #D70909;
+  --allered-black: #0B0B0B;
+  --allered-framesize: 8px;
+  --allered-white: #FBFBFB;
+  --allered-fontfamily: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
 .glide {
   position: relative;
   width: 100%;
