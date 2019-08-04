@@ -3,9 +3,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("allered-button").style.display = "block";
+    document.getElementById("allered-backtotop__button").style.display = "block";
   } else {
-    document.getElementById("allered-button").style.display = "none";
+    document.getElementById("allered-backtotop__button").style.display = "none";
   }
 }
 
