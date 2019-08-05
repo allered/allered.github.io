@@ -229,6 +229,28 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     text-align: left;
 }
 
+.allered-slide__caption {
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.7em;
+    letter-spacing: .04px;
+    text-align: left;
+    position: absolute;
+    left: 17em;
+}
+
+.allered-slide__subcaption {
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    letter-spacing: .045px;
+    text-align: left;
+}
+
 
 .allered-image__biography {
     border: 3px solid var(--allered-red);
@@ -263,22 +285,65 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
         width: 20px;
     }
 
-    .allered-image__caption {
+    .allered-slide__caption {
         font-size: 0.5em;
         letter-spacing: .04px;
+        left:0em;
     }
 
-    .allered-image__subcaption {
+    .allered-slide__subcaption {
         font-size: 0.9em;
         font-weight: 500;
         letter-spacing: .04px;
     }
 
-    .glide__arrow--left {
+    .glide_arrow
+    {
         display: none;
     }
+}
 
-    .glide__arrow--right {
+
+/*VIEW ON TABLET*/
+@media only screen and (max-width:768px) {
+
+    .allered-brand {
+        font-size: 1.4em;
+        letter-spacing: .04px;
+        margin-left: -20px;
+    }
+
+    .allered-subbrand {
+        font-size: 0.6em;
+        letter-spacing: .04px;
+        margin-top: -12px;
+        margin-left: -20px;
+    }
+
+    .allered-footer {
+        font-size: 0.6em;
+        letter-spacing: .04px;
+    }
+
+    .allered-social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .allered-slide__caption {
+        font-size: 0.7em;
+        letter-spacing: .04px;
+        left:0em;
+    }
+
+    .allered-slide__subcaption {
+        font-size: 0.9em;
+        font-weight: 500;
+        letter-spacing: .04px;
+    }
+
+    .glide_arrow
+    {
         display: none;
     }
 }
