@@ -64,9 +64,6 @@
     <!-- BODY -->
     <div class="allered-container">
 
-      <!-- SINGLE COLUMN -->
-      <div class="row">
-
         <!-- SLIDESHOW -->
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
@@ -87,15 +84,13 @@
 
         <!-- CONTROLS -->
         <div class="glide">
-              <div class="glide__track" data-glide-el="track"></div>
+              <div class="glide__track" data-glide-el="track">...</div>
 
               <div class="glide__arrows" data-glide-el="controls">
                 <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span class="allered-slide-controls allered-back"></span></button>
                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span class="allered-slide-controls allered-next"></span></button>
               </div>
           </div>
-
-        </div>
 
       </div>
 
@@ -126,7 +121,16 @@
   <script src="glide/dist/glide.js"></script>
 
   <script>
-    new Glide('.glide').mount()
+
+var glide = new Glide('.glide', {
+  type: 'carousel',
+  animationDuration: 2500,
+  autoplay: 1500,
+});
+
+    glide.mount();
+
+    
   </script>
 
 
