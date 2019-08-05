@@ -27,7 +27,8 @@
   cursor: pointer;
   transition: opacity 150ms ease, border 300ms ease-in-out;
   /* transform: translateY(-50%); */
-  line-height: 1; }
+  line-height: 1; ;
+}
 
   .glide__arrow:focus {
     outline: none; }
