@@ -214,6 +214,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     font-size: 0.7em;
     letter-spacing: .04px;
     text-align: left;
+    position: absolute;
 }
 
 .allered-image__subcaption {
@@ -231,6 +232,8 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     border: 3px solid var(--allered-red);
     padding: 0;
 }
+
+
 
 /*VIEW ON SMARTPHONE*/
 @media only screen and (max-width:568px) {
