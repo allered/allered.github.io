@@ -273,5 +273,11 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
         font-weight: 500;
         letter-spacing: .04px;
     }
+
+    .glide__arrow--left {
+        display: none; }
+    
+      .glide__arrow--right {
+        display: none; }
 }
 
