@@ -49,21 +49,19 @@
 
 /* SLIDER CONTROLS */
 
-.allered-slide-controls
-{
+.allered-slide-controls {
     display: inline-block;
     width: 10px;
     height: 10px;
     border-top: 2px solid var(--allered-black);
     border-right: 2px solid var(--allered-black);
 }
-  
-.allered-next
-{
+
+.allered-next {
     transform: rotate(45deg);
 }
 
 
-.allered-back{
+.allered-back {
     transform: rotate(-135deg);
 }
