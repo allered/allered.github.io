@@ -260,7 +260,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 
 
 /*VIEW ON SMARTPHONE*/
-@media only screen and (max-width:568px) {
+@media only screen and (max-width:400px) {
 
     .allered-brand {
         font-size: 1.4em;
@@ -305,7 +305,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 
 
 /*VIEW ON TABLET*/
-@media only screen and (max-width:768px) {
+@media only screen and (min-width: 401px) and (max-width:768px) {
 
     .allered-brand {
         font-size: 1.4em;
@@ -342,8 +342,16 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
         letter-spacing: .04px;
     }
 
-    .glide_arrow
-    {
+    .glide__arrow--left {
         display: none;
-    }
+      }
+
+      .glide__arrow--right {
+        display: none;
+      }
+}
+
+/*VIEW ON DESKTOP*/
+@media only screen and (max-width:961px) {
+
 }
