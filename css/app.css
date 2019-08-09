@@ -201,6 +201,11 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     text-align: center;
 }
 
+.allered-container__glide{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .allered-image {
     vertical-align: middle;
     text-align: center;
