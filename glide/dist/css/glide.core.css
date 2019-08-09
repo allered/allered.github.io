@@ -20,6 +20,7 @@
 
 .glide__track {
   overflow: hidden;
+  max-width: 800px;
 }
 
 .glide__slides {

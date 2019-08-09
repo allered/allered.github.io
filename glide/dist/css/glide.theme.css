@@ -31,27 +31,19 @@
 
 .glide__arrow:focus {
   outline: none;
-}
-
-.glide__arrow:hover {
-  /* border-color: white;  */
+  color: var(--allered-red);
 }
 
 .glide__arrow--left {
   position: absolute;
-  left: 53.5em;
+  right:0px;
+  margin-right: 15px;
 }
 
 .glide__arrow--right {
   position: absolute;
-  left: 54.5em;
+  right:0px;
 }
-
-.glide__arrow--disabled {
-  /* opacity: 0.33; */
-}
-
-
 
 
 .glide__bullets {

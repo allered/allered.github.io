@@ -201,7 +201,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     text-align: center;
 }
 
-.allered-container__glide{
+.allered-container__glide {
     max-width: 800px;
     margin: 0 auto;
 }
@@ -244,7 +244,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     letter-spacing: .04px;
     text-align: left;
     position: absolute;
-    left: 17em;
+    width: 400px;
 }
 
 .allered-slide__subcaption {
@@ -255,6 +255,26 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     font-size: 1em;
     letter-spacing: .045px;
     text-align: left;
+}
+
+/* SLIDER CONTROLS */
+
+.allered-slide-controls {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--allered-black);
+    border-right: 2px solid var(--allered-black);
+    position: absolute;
+    right:0px;
+}
+
+.allered-next {
+    transform: rotate(45deg);
+}
+
+
+.allered-back {
+    transform: rotate(-135deg);
 }
 
 
@@ -294,18 +314,13 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     .allered-slide__caption {
         font-size: 0.5em;
         letter-spacing: .04px;
-        left:0em;
+        left: 0em;
     }
 
     .allered-slide__subcaption {
         font-size: 0.9em;
         font-weight: 500;
         letter-spacing: .04px;
-    }
-
-    .glide_arrow
-    {
-        display: none;
     }
 }
 
@@ -339,7 +354,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     .allered-slide__caption {
         font-size: 0.7em;
         letter-spacing: .04px;
-        left:0em;
+        left: 0em;
     }
 
     .allered-slide__subcaption {
@@ -347,17 +362,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
         font-weight: 500;
         letter-spacing: .04px;
     }
-
-    .glide__arrow--left {
-        display: none;
-      }
-
-      .glide__arrow--right {
-        display: none;
-      }
 }
 
 /*VIEW ON DESKTOP*/
-@media only screen and (max-width:961px) {
-
-}
+@media only screen and (max-width:961px) {}

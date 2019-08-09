@@ -46,24 +46,3 @@
     transform: rotate(-45deg);
 }
 
-
-/* SLIDER CONTROLS */
-
-.allered-slide-controls
-{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid var(--allered-black);
-    border-right: 2px solid var(--allered-black)
-}
-  
-.allered-next
-{
-    transform: rotate(45deg);
-}
-
-
-.allered-back{
-    transform: rotate(-135deg);
-}
