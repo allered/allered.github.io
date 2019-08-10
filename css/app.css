@@ -227,29 +227,24 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 }
 
 .allered-typewriter{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .2em solid var(--allered-red); /* The typwriter cursor */
-  padding:0px;
-  white-space: nowrap;  /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em; /* Adjust as needed */
-  animation: 
-    typing 4s steps(100, end),
-    blink-caret .75s step-end infinite;
+    padding:0;
+    width: 24em;
+    border-right: 2px solid var(--allered-red);
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
 }
 
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--allered-red); }
-  }
 
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 50em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color:var(--allered-red);}
+  to{border-right-color: transparent;}
+}
 
 .allered-image__subcaption {
     text-transform: uppercase;
