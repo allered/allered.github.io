@@ -187,6 +187,10 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 
 }
 
+.allered-link:hover{
+    color: var(--allered-red) !important;
+}
+
 .allered-link {
     padding: 4px 0px 0px 0px;
     margin: 5px 0px 0px 0px;
