@@ -224,7 +224,6 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     vertical-align: middle;
     text-align: center;
     max-width: 100%;
-    padding-top: 30px;
 }
 
 .allered-image__caption {
@@ -235,29 +234,12 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     font-size: 0.7em;
     letter-spacing: .04px;
     text-align: left;
-    position: absolute;
-    padding-bottom: 20px;
-    
 }
 
 .allered-typewriter{
     padding:0;
     width: 24em;
-    border-right: 2px solid var(--allered-red);
-    white-space: nowrap;
-    overflow: hidden; 
-    animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 50em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color:var(--allered-red);}
-  to{border-right-color: transparent;}
+    width: 100%;
 }
 
 .allered-image__subcaption {
@@ -313,10 +295,6 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 }
 
 
-.allered-image__biography {
-    border: 3px solid var(--allered-red);
-    padding: 0px;
-}
 
 
 
