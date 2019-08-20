@@ -12,6 +12,8 @@
     box-sizing: border-box;
 }
 
+
+
 /*FIXING NAVBAR MARGINS */
 .navbar {
     margin-left: 25px;
@@ -20,45 +22,53 @@
     margin-bottom: 50px;
 }
 
-/*RED BORDER AROUND WEBSITE*/
-.allered-body {
-    /*BACKGROUND*/
+.allered-app{
     background-color: #FBFBFB;
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
-    /*POSIZIONE DI PARTENZA DELLO SFONDO - COORDINATA y*/
-    top: 0;
-    /*POSIZIONE DI PARTENZA DELLO SFONDO - COORDINATA x*/
-    left: 0;
-    /* FORZA LA POSIZIONE DEL FRAME INDIPENDENTEMENTE DAGLI ALTRI CONTENUTI*/
-    position: fixed;
-    /* VALORE 3 PER STARE SOPRA AL FRAME*/
-    z-index: 3;
-    /*SETTO L'ALTEZZA E LA LARGHEZZA DEL BODY AL 100 MENO LA DIMENSIONE DEL BORDO PER ENTRAMBI I LATI*/
-    height: calc(100vh - var(--allered-framesize)*2);
-    width: calc(100vw - var(--allered-framesize)*2);
-    margin: var(--allered-framesize);
-    /*IMPEDISCE CHE IL CONTENUTO CHE ESCE DAL DIV IN ORIZZIONTALE SI VEDA*/
-    overflow-x: hidden;
-    /*PERMETTE CHE IL CONTENUTO CHE ESCE DAL DIV IN VERTICALE SI VEDA SCROLLANDO*/
-    overflow-y: auto;
+    padding: 10px;
 }
 
-.allered-frame {
-    /*BACKGROUND RED*/
-    background-color: var(--allered-red);
-    /* FORZA LA POSIZIONE DEL FRAME INDIPENDENTEMENTE DAGLI ALTRI CONTENUTI*/
+.allered-app__frame
+{
+    background: var(--allered-red);
     position: fixed;
-    /* VALORE DELL'ASSE z CHE INDICA CHE HA UNA PROFONDITA', IL BODY HA VALORE 3 PER STARE SOPRA*/
-    z-index: 2;
-    /*POSIZIONE DI PARTENZA DELLO SFONDO - COORDINATA y*/
-    top: 0;
-    /*POSIZIONE DI PARTENZA DELLO SFONDO - COORDINATA x*/
-    left: 0;
-    /* DIMENSIONE FRAME 100% DELLA FINESTRA IN ALTEZZA*/
-    height: 100vh;
-    /* DIMENSIONE FRAME 100% DELLA FINESTRA IN LARGHEZZA*/
-    width: 100vw;
+    z-index: 999;
 }
+
+.allered-app__frame--left
+{
+height: 100vh;
+left:0;
+top:0;
+width: 10px;
+
+}
+
+.allered-app__frame--top
+{
+    width: 100vw;
+    left:0;
+    top:0;
+    height: 10px;
+}
+
+.allered-app__frame--bottom
+{
+    width: 100vw;
+    left:0;
+    bottom:0;
+    height: 10px;
+}
+
+.allered-app__frame--right
+{
+    height: 100vh;
+    right:0;
+    top:0;
+    width: 10px;
+}
+
+
 
 .allered-brand {
     color: var(--allered-black);
