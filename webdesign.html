@@ -93,10 +93,8 @@
             Photography</span></p>
         <!-- CONTROLS -->
         <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
-              class="allered-slide-controls allered-back"></span></button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span
-              class="allered-slide-controls allered-next"></span></button>
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
         </div>
       </div>
 
@@ -132,10 +130,8 @@
               Portfolio</span></p>
           <!-- CONTROLS -->
           <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
-                class="allered-slide-controls allered-back"></span></button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span
-                class="allered-slide-controls allered-next"></span></button>
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
           </div>
         </div>
       </div>
@@ -178,7 +174,8 @@
       var glide = new Glide(slider, {
       type: 'carousel',
       animationDuration: 2000,
-      autoplay: 1500,
+      autoplay: 5000,
+      gap: '15px',
     });
 
     glide.mount();

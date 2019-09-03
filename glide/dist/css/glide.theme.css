@@ -6,43 +6,40 @@
   --allered-fontfamily: "Helvetica Neue", Arial, sans-serif;
 }
 
-
-
-.glide__arrow {
-  /* display: block; */
-  /* top: 50%; */
-  z-index: 3;
-  /* color: var(--allered-red) ; */
-  text-transform: uppercase;
-  padding: 0px 10px;
-  margin: 0px;
-  border: 0;
-  background-color: transparent;
-  /* border: 2px solid rgba(255, 255, 255, 0.5); */
-  /* border-radius: 4px; */
-  /* box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
-  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); */
-  opacity: 1;
-  cursor: pointer;
-  transition: opacity 150ms ease, border 300ms ease-in-out;
-  /* transform: translateY(-50%); */
-  line-height: 1;
+.glide__arrows {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+  width: 32px;
 }
 
-.glide__arrow:focus {
+.glide__arrow {
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  background: transparent;
+  border-style: solid;
+  border-color: var(--allered-black);
+  border-width: 2px 0px 0px 2px;
+  padding: 0;
+  transition: border-width 150ms ease-in-out;
+  z-index: 3;
+}
+
+.glide__arrow:hover {
   outline: none;
-  color: var(--allered-red);
+  border-color: var(--allered-red);
 }
 
 .glide__arrow--left {
-  position: absolute;
-  right:0px;
-  margin-right: 15px;
+  transform: rotate(-45deg);
 }
 
 .glide__arrow--right {
-  position: absolute;
-  right:0px;
+  transform: rotate(135deg);
 }
 
 
