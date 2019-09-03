@@ -100,7 +100,11 @@
         </div>
       </div>
 
-      <div class="allered-container__glide">
+      
+
+    </div>
+
+    <div class="allered-container__glide">
 
         <!-- SLIDESHOW -->
         <div class="glide">
@@ -136,8 +140,6 @@
         </div>
       </div>
 
-    </div>
-
     <!-- FOOTER -->
     <footer class=" allered-footer">
 
@@ -152,6 +154,13 @@
     </footer>
 
 
+     <!-- BACK TO TOP BUTTON -->
+ <button class="allered-backtotop" title="Go to top">
+
+    <span class="allered-backtotop__arrow allered-backtotop__arrow--top"></span>
+  
+  </button> 
+
   <!-- Link a JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -160,15 +169,21 @@
   <script src="js/app.js"></script>
   <script src="js/hamburger.js"></script>
   <script src="glide/dist/glide.js"></script>
+  <script src="js/backtotop.js"></script>
 
   <script>
-    var glide = new Glide('.glide', {
+
+    var sliders=document.querySelectorAll('.glide');
+    sliders.forEach((slider)=>{
+      var glide = new Glide(slider, {
       type: 'carousel',
       animationDuration: 2000,
       autoplay: 1500,
     });
 
     glide.mount();
+    })
+    
   </script>
 
 
