@@ -240,6 +240,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     padding:0;
     width: 24em;
     width: 100%;
+    height: 50px;
 }
 
 .allered-image__subcaption {
