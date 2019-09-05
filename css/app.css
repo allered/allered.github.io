@@ -237,6 +237,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     font-size: 0.7em;
     letter-spacing: .04px;
     text-align: left;
+    padding-bottom: 10px;
 }
 
 .allered-typewriter{
