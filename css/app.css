@@ -208,11 +208,10 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     border: 0;
 }
 
-
 .allered-container {
     margin-right: 20px;
     margin-left: 20px;
-    width: auto;
+    width: width: calc(100% - 30px);
     text-align: center;
 }
 
@@ -226,7 +225,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 .allered-image {
     vertical-align: middle;
     text-align: center;
-    max-width: 100%;
+    max-width: 800px;
 }
 
 .allered-image__caption {
