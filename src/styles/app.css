@@ -280,6 +280,11 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     text-align: left;
 }
 
+#mail
+{
+    text-align: center;
+}
+
 /*VIEW ON SMARTPHONE*/
 @media only screen and (max-width:400px) {
 
