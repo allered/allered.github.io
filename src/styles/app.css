@@ -22,50 +22,45 @@
     margin-bottom: 50px;
 }
 
-.allered-app{
+.allered-app {
     background-color: #FBFBFB;
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
     padding: 10px;
     overflow-x: hidden;
 }
 
-.allered-app__frame
-{
+.allered-app__frame {
     background: var(--allered-red);
     position: fixed;
     z-index: 999;
 }
 
-.allered-app__frame--left
-{
-height: 100vh;
-left:0;
-top:0;
-width: 10px;
-
-}
-
-.allered-app__frame--top
-{
-    width: 100vw;
-    left:0;
-    top:0;
-    height: 10px;
-}
-
-.allered-app__frame--bottom
-{
-    width: 100vw;
-    left:0;
-    bottom:0;
-    height: 10px;
-}
-
-.allered-app__frame--right
-{
+.allered-app__frame--left {
     height: 100vh;
-    right:0;
-    top:0;
+    left: 0;
+    top: 0;
+    width: 10px;
+
+}
+
+.allered-app__frame--top {
+    width: 100vw;
+    left: 0;
+    top: 0;
+    height: 10px;
+}
+
+.allered-app__frame--bottom {
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    height: 10px;
+}
+
+.allered-app__frame--right {
+    height: 100vh;
+    right: 0;
+    top: 0;
     width: 10px;
 }
 
@@ -198,7 +193,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
 
 }
 
-.allered-link:hover{
+.allered-link:hover {
     color: var(--allered-red) !important;
 }
 
@@ -240,8 +235,8 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     padding-bottom: 10px;
 }
 
-.allered-typewriter{
-    padding:0;
+.allered-typewriter {
+    padding: 0;
     width: 24em;
     width: 100%;
     height: 50px;
@@ -268,6 +263,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     text-align: left;
     position: absolute;
     width: 85%;
+    color:var(--allered-red);
 }
 
 .allered-slide__subcaption {
@@ -278,10 +274,15 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     font-size: 1em;
     letter-spacing: .045px;
     text-align: left;
+    color:var(--allered-black);
 }
 
-#mail
-{
+#allered-slide__link{
+    color:var(--allered-red);
+    text-decoration: none;
+}
+
+#mail {
     text-align: center;
 }
 
