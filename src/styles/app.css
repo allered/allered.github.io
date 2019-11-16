@@ -222,6 +222,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     text-align: center;
     margin: 0 auto;
     max-width: 100%;
+    border: 10px solid var(--allered-red);
 }
 
 .allered-image__caption {
