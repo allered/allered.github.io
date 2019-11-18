@@ -7,22 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Alessandro Rossi - Photographer | Web Designer</title>
-  <link rel="stylesheet" href="vendors/bootstrap.css">
+  <!-- <link rel="stylesheet" href="vendors/bootstrap.css"> -->
   <link rel="stylesheet" href="src/styles/app.css">
-  <link rel="stylesheet" href="src/styles/hamburger.css">
   <link rel="stylesheet" href="src/styles/ui.css">
+  <link rel="stylesheet" href="src/styles/hamburger.css">
 
 </head>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66113232-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-66113232-1');
-</script>
 
 <body class="allered-app">
     <div class="allered-app__frame allered-app__frame--left"></div>
@@ -33,45 +24,46 @@
     
     <header>
       <!-- NAVIGATION-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light allered-navbar">
-
+      <nav class="allered-navbar allered-navbar__light allered-bg-light">
+  
         <!-- BRAND SECTION-->
-        <a class="navbar-brand" href="index.html">
+        <a class="allered-navbar-brand" href="index.html">
           <div class="allered-brand">ALLERED</div>
           <div class="allered-subbrand">PHOTOGRAPHER | WEB DEVELOPER</div>
         </a>
-
+  
         <menu>
-
-        <!-- MENU SECTION-->
-        <button class="navbar-toggler hamburger hamburger--spring" type="button" data-toggle="collapse"
-          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-
-      </menu>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav allered-menu">
-            <li class="nav-item allered-item">
-              <a class="nav-link allered-link" href="/index.html">Portrait <span class="sr-only">(current)</span></a>
+  
+          <!-- MENU SECTION-->
+          <button class="allered-navbar__toggler hamburger hamburger--spring" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+  
+        </menu>
+  
+        <div class="collapse .allered-navbar__collapse allered-justify__content__end" id="navbarNav">
+          <ul class="allered-navbar__nav allered-menu">
+            <li class="allered-nav__item allered-item">
+              <a class="allered-nav__link allered-link" href="/index.html">Portrait</a>
             </li>
-            <li class="nav-item allered-item active">
-              <a class="nav-link allered-link" href="/wedding.html">Wedding</a>
+            <li class="allered-nav__item allered-item active">
+              <a class="allered-nav__link allered-link" href="/wedding.html">Wedding <span
+                class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item allered-item">
-              <a class="nav-link allered-link" href="/webdesign.html">Websites</a>
+            <li class="allered-nav__item allered-item">
+              <a class="allered-nav__link allered-link" href="/webdesign.html">Websites</a>
             </li>
-            <li class="nav-item allered-item">
-              <a class="nav-link allered-link" href="/contact.html">Contact</a>
+            <li class="allered-nav__item allered-item">
+              <a class="allered-nav__link allered-link" href="/contact.html">Contact</a>
             </li>
           </ul>
         </div>
-
+  
       </nav>
-
+  
     </header>
 
     <!-- BODY -->

@@ -7,21 +7,6 @@
 }
 
 
-/*CHANGE THE CONTENT-BOX TO BORDER-BOX */
-* {
-    box-sizing: border-box;
-}
-
-
-
-/*FIXING NAVBAR MARGINS */
-.navbar {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 5px;
-    margin-bottom: 50px;
-}
-
 .allered-app {
     background-color: #FBFBFB;
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
@@ -64,28 +49,6 @@
     width: 10px;
 }
 
-
-
-.allered-brand {
-    color: var(--allered-black);
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2.4em;
-    letter-spacing: .04px;
-
-}
-
-.allered-subbrand {
-    display: flexbox;
-    color: var(--allered-black);
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 0.8em;
-    letter-spacing: .04px;
-    margin-top: -15px;
-}
 
 .allered-text {
     color: var(--allered-black);
@@ -164,51 +127,54 @@
     opacity: 0;
 }
 
-
-/* .allered-navbar {} */
-
-
-
-/*
-MENU ITEMS INACTIVE COLOR
-HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOTSTRAP
-*/
-.allered-navbar .allered-menu .allered-item .allered-link {
-    color: var(--allered-black);
-}
-
-/*WHEN MENU ITEM IS ACTIVE*/
-.allered-navbar .allered-menu .allered-item.active .allered-link {
-    color: var(--allered-red);
-}
-
-/* .allered-menu {} */
-
-.allered-item {
-    color: var(--allered-black);
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    font-weight: 500;
-
-}
-
-.allered-link:hover {
-    color: var(--allered-red) !important;
-}
-
-.allered-link {
-    padding: 4px 0px 0px 0px;
-    margin: 5px 0px 0px 0px;
-    border: 0;
-}
-
 .allered-container {
     margin-right: 20px;
     margin-left: 20px;
     width: auto;
     text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
 }
+
+.allered-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+}
+
+.allered-column
+{
+    width: 800px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.allered-col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+  }
+
+  .allered-offset-md-3 {
+    margin-left: 25%;
+  }
 
 .allered-container__glide {
     width: calc(100% - 30px);
@@ -264,7 +230,7 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     text-align: left;
     position: absolute;
     width: 85%;
-    color:var(--allered-red);
+    color: var(--allered-red);
 }
 
 .allered-slide__subcaption {
@@ -275,11 +241,11 @@ HANNO SPECIFICITA' MAGGIORE DELLE CLASSI .navbar-light e .navbar-toggler DI BOOT
     font-size: 1em;
     letter-spacing: .045px;
     text-align: left;
-    color:var(--allered-black);
+    color: var(--allered-black);
 }
 
-#allered-slide__link{
-    color:var(--allered-red);
+#allered-slide__link {
+    color: var(--allered-red);
     text-decoration: none;
 }
 
