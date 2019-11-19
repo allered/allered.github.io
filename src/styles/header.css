@@ -1,0 +1,96 @@
+:root {
+    --allered-red: #D70909;
+    --allered-black: #0B0B0B;
+    --allered-framesize: 8px;
+    --allered-white: #FBFBFB;
+    --allered-fontfamily: "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5% 6% 5%;
+}
+
+.allered-brand {
+    background-color: var(--allered-white);
+    font-family: var(--allered-fontfamily);
+    font-weight: 600;
+    font-size: 2.5em;
+    color: var(--allered-black);
+}
+
+.allered-subbrand {
+    background-color: var(--allered-white);
+    font-family: var(--allered-fontfamily);
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--allered-black);
+    margin-top: -8px;
+}
+
+.allered-navitem
+{
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--allered-white);
+    font-family: var(--allered-fontfamily);
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--allered-black);
+}
+
+.allered-navlinks {
+    list-style: none;
+}
+
+.allered-navlinks li {
+    display: inline-block;
+}
+
+.allered-navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.allered-navlinks li a:hover {
+    color: var(--allered-red);
+}
+
+.allered-current {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.allered-current-focusable:active,
+.allered-current-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/*WHEN MENU ITEM IS NOT ACTIVE*/
+.allered-navitem .allered-link {
+    color: var(--allered-black);
+}
+
+/*WHEN MENU ITEM IS ACTIVE*/
+.allered-navitem.active .allered-link {
+    color: var(--allered-red);
+}

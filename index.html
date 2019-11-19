@@ -8,12 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Alessandro Rossi - Photographer | Web Developer</title>
-  <!-- <link rel="stylesheet" href="vendors/bootstrap.css"> -->
-  <link rel="stylesheet" href="src/styles/app.css">
-  <link rel="stylesheet" href="src/styles/ui.css">
+  <link rel="stylesheet" href="src/styles/header.css">
+  <link rel="stylesheet" href="src/styles/body.css">
+  <link rel="stylesheet" href="src/styles/backtotop.css">
   <link rel="stylesheet" href="src/styles/hamburger.css">
-
-
 </head>
 
 
@@ -23,69 +21,58 @@
   <div class="allered-app__frame allered-app__frame--right"></div>
   <div class="allered-app__frame allered-app__frame--bottom"></div>
 
-
   <header>
-    <!-- NAVIGATION-->
-    <nav class="allered-navbar allered-navbar__light allered-bg-light">
+    <a href="index.html">
+      <div class="allered-brand">ALLERED</div>
+      <div class="allered-subbrand">PHOTOGRAPHER | WEB DEVELOPER</div>
+    </a>
 
-      <!-- BRAND SECTION-->
-      <a class="allered-navbar-brand" href="index.html">
-        <div class="allered-brand">ALLERED</div>
-        <div class="allered-subbrand">PHOTOGRAPHER | WEB DEVELOPER</div>
-      </a>
+    <!-- <menu>
+          <button class="allered-navbar__toggler hamburger hamburger--spring" type="button" data-toggle="collapse"
+              data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+              </span>
+          </button>
+      </menu> -->
 
-      <menu>
-
-        <!-- MENU SECTION-->
-        <button class="allered-navbar__toggler hamburger hamburger--spring" type="button" data-toggle="collapse"
-          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-
-      </menu>
-
-      <div class="collapse .allered-navbar__collapse allered-justify__content__end" id="navbarNav">
-        <ul class="allered-navbar__nav allered-menu">
-          <li class="allered-nav__item allered-item active">
-            <a class="allered-nav__link allered-link" href="/index.html">Portrait <span
-                class="sr-only">(current)</span></a>
-          </li>
-          <li class="allered-nav__item allered-item">
-            <a class="allered-nav__link allered-link" href="/wedding.html">Wedding</a>
-          </li>
-          <li class="allered-nav__item allered-item">
-            <a class="allered-nav__link allered-link" href="/webdesign.html">Websites</a>
-          </li>
-          <li class="allered-nav__item allered-item">
-            <a class="allered-nav__link allered-link" href="/contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <nav>
+      <ul class="allered-navlinks">
+        <li class="allered-navitem active">
+          <a class="allered-link" href="/index.html">PORTRAIT
+            <span class="allered-current">(current)</span></a>
+        </li>
+        <li class="allered-navitem">
+          <a class="allered-link" href="/wedding.html">WEDDING</a>
+        </li>
+        <li class="allered-navitem">
+          <a class="allered-link" href="/webdesign.html">WEBSITES</a>
+        </li>
+        <li class="allered-navitem ">
+          <a class="allered-link" href="/contact.html">CONTACT</a>
+        </li>
+      </ul>
 
     </nav>
 
   </header>
+
 
   <!-- BODY -->
   <div class="allered-container">
 
     <!-- SINGLE COLUMN -->
     <div class="allered-row">
-
       <div class="allered-column">
         <img class="allered-image" src="dist/images/portrait/Chiara3.jpg" alt="Girl - Relio Light ray">
         <p class="allered-image__caption">Relio.it -
-          <span class="allered-image__subcaption">Product Commercial</span>
-        </p>
+          <span class="allered-image__subcaption">Product Commercial</span></p>
       </div>
 
     </div>
 
     <!-- SINGLE COLUMN -->
     <div class="allered-row">
-
       <div class="allered-column">
         <img class="allered-image" src="dist/images/portrait/Fivesenses3.jpg" alt="Bikini Models on the beach">
         <p class="allered-image__caption">Fivesenses -
@@ -97,7 +84,6 @@
 
     <!-- SINGLE COLUMN -->
     <div class="allered-row">
-
       <div class="allered-column">
         <img class="allered-image" src="dist/images/portrait/Fivesenses5.jpg" alt="Bikini Model on the beach">
         <p class="allered-image__caption">Fivesenses -
@@ -130,25 +116,6 @@
       </div>
 
     </div>
-
-    <!-- DOUBLE COLUMN -->
-    <!-- <div class="allered-row">
-
-      <div class="col-md-3 allered-offset-md-3">
-        <img class="allered-image" src="dist/images/portrait/Alice3.jpg" alt="Red Woman">
-        <p class="allered-image__caption">ALICE -
-          <span class="allered-image__subcaption">Deposito Zero Studios</span>
-        </p>
-      </div>
-
-      <div class="col-md-3">
-        <img class="allered-image" src="dist/images/portrait/Alice-Studio.jpg" alt="Red Woman">
-        <p class="allered-image__caption">ALICE -
-          <span class="allered-image__subcaption">Deposito Zero Studios</span>
-        </p>
-      </div>
-
-    </div> -->
 
     <!-- SINGLE COLUMN -->
     <div class="allered-row">
@@ -196,8 +163,10 @@
 
   </div>
 
+
+
   <!-- FOOTER -->
-  <footer class=" allered-footer">
+  <footer class="allered-footer">
 
     <div class="allered-footer__socials">
       <a class="allered-social" href="http://instagram.com/allered" target="_blank">
@@ -216,8 +185,6 @@
     <span class="allered-backtotop__arrow allered-backtotop__arrow--top"></span>
 
   </button>
-
-
 
 
   <!-- Link a JQuery -->
