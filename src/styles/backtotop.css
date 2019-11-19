@@ -1,9 +1,9 @@
 :root {
-    --allered-red: #D70909;
-    --allered-black: #0B0B0B;
-    --allered-framesize: 8px;
-    --allered-white: #FBFBFB;
-    --allered-fontfamily: "Helvetica Neue", Arial, sans-serif;
+    --ar-red: #D70909;
+    --ar-black: #0B0B0B;
+    --ar-framesize: 8px;
+    --ar-white: #FBFBFB;
+    --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
 }
 
 *
@@ -16,7 +16,7 @@
 
 
 /* BACK TO TOP CONTROLS */
-.allered-backtotop {
+.ar-backtotop {
     /* display: none; */
     position: fixed;
     bottom: 0px;
@@ -26,29 +26,29 @@
     font-size: 0.75em;
     font-weight: 500;
     background-color: transparent;
-    color: var(--allered-black);
+    color: var(--ar-black);
     /* border-radius: 2px;
-    border: 3px solid var(--allered-red); */
+    border: 3px solid var(--ar-red); */
     outline: 0;
     border: 0;
     width: 60px;
     height: 60px;
 }
 
-.allered-backtotop:focus {
+.ar-backtotop:focus {
     outline: 0;
     border: 0;
 }
 
 
-.allered-backtotop__arrow {
+.ar-backtotop__arrow {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border-top: 3px solid var(--allered-red);
-    border-right: 3px solid var(--allered-red);
+    border-top: 3px solid var(--ar-red);
+    border-right: 3px solid var(--ar-red);
 }
 
-.allered-backtotop__arrow--top {
+.ar-backtotop__arrow--top {
     transform: rotate(-45deg);
 }

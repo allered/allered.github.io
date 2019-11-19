@@ -1,9 +1,9 @@
 :root {
-    --allered-red: #D70909;
-    --allered-black: #0B0B0B;
-    --allered-framesize: 8px;
-    --allered-white: #FBFBFB;
-    --allered-fontfamily: "Helvetica Neue", Arial, sans-serif;
+    --ar-red: #D70909;
+    --ar-black: #0B0B0B;
+    --ar-framesize: 8px;
+    --ar-white: #FBFBFB;
+    --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -13,20 +13,20 @@
 }
 
 /* FRAME AROUND WEBSITE */
-.allered-app {
+.ar-app {
     background-color: #FBFBFB;
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
     padding: 10px;
     overflow-x: hidden;
 }
 
-.allered-app__frame {
-    background: var(--allered-red);
+.ar-app__frame {
+    background: var(--ar-red);
     position: fixed;
     z-index: 999;
 }
 
-.allered-app__frame--left {
+.ar-app__frame--left {
     height: 100vh;
     left: 0;
     top: 0;
@@ -34,21 +34,21 @@
 
 }
 
-.allered-app__frame--top {
+.ar-app__frame--top {
     width: 100vw;
     left: 0;
     top: 0;
     height: 10px;
 }
 
-.allered-app__frame--bottom {
+.ar-app__frame--bottom {
     width: 100vw;
     left: 0;
     bottom: 0;
     height: 10px;
 }
 
-.allered-app__frame--right {
+.ar-app__frame--right {
     height: 100vh;
     right: 0;
     top: 0;
@@ -58,69 +58,57 @@
 /* END OF FRAME CODE */
 
 /* BODY STYLE */
-.allered-container {
+.ar-container {
     width: calc(100% - 30px);
     margin: 0 auto;
     overflow: hidden;
-    padding-bottom: 80px;
 }
 
-.allered-row {
+.ar-row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
     justify-content: center;
 }
 
-.allered-column {
+.ar-column {
     width: 800px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
-.allered-container__glide {
+.ar-container__glide {
     width: calc(100% - 30px);
     margin: 0 auto;
     overflow: hidden;
     padding-bottom: 80px;
 }
 
-.allered-image {
+.ar-image {
     vertical-align: middle;
     text-align: center;
     margin: 0 auto;
     max-width: 100%;
-    /* border: 10px solid var(--allered-red); */
+    /* border: 10px solid var(--ar-red); */
 }
 
-.allered-image__caption {
+.ar-image__caption {
     text-transform: uppercase;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 0.7em;
     letter-spacing: .04px;
-    text-align: left;
-    padding-bottom: 30px;
+    justify-content: flex-start;
+    padding-bottom: 5%;
 }
 
-.allered-typewriter {
-    padding: 0;
-    width: 24em;
-    width: 100%;
-    height: 50px;
-    padding-top: 1em;
-}
-
-.allered-image__subcaption {
+.ar-image__subcaption {
     text-transform: uppercase;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
@@ -130,7 +118,7 @@
     text-align: left;
 }
 
-.allered-slide__caption {
+.ar-slide__caption {
     text-transform: uppercase;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
@@ -140,10 +128,10 @@
     text-align: left;
     position: absolute;
     width: 85%;
-    color: var(--allered-red);
+    color: var(--ar-red);
 }
 
-.allered-slide__subcaption {
+.ar-slide__subcaption {
     text-transform: uppercase;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
@@ -151,23 +139,32 @@
     font-size: 1em;
     letter-spacing: .045px;
     text-align: left;
-    color: var(--allered-black);
+    color: var(--ar-black);
 }
 
-#allered-slide__link {
-    color: var(--allered-red);
+#ar-slide__link {
+    color: var(--ar-red);
     text-decoration: none;
+}
+
+.ar-typewriter {
+    padding: 0;
+    width: 24em;
+    width: 100%;
+    height: 50px;
+    padding-top: 1em;
 }
 
 #mail {
     text-align: center;
 }
+
 /* END OF BODY STYLE */
 
 
 /* FOOTER STYLE */
-.allered-footer {
-    color: var(--allered-black);
+.ar-footer {
+    color: var(--ar-black);
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -175,14 +172,15 @@
     letter-spacing: .03px;
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 1%;
 }
 
-.allered-social {
+.ar-social {
     display: inline-flex;
     padding: 10px 0px;
 }
 
-.allered-social__image {
+.ar-social__image {
     height: 23px;
     width: 23px;
 }
@@ -190,7 +188,7 @@
 /* END OF FOOTER STYLE */
 
 /* HAMBURGER MENU STYLE */
-.allered-hamburger {
+.ar-hamburger {
     overflow: hidden;
     width: 30px;
     height: 17px;
@@ -203,31 +201,31 @@
     outline: none;
 }
 
-.allered-hamburger.collapsed .allered-hamburger__line--top,
-.allered-hamburger.collapsed .allered-hamburger__line--middle,
-.allered-hamburger.collapsed .allered-hamburger__line--bottom {
+.ar-hamburger.collapsed .ar-hamburger__line--top,
+.ar-hamburger.collapsed .ar-hamburger__line--middle,
+.ar-hamburger.collapsed .ar-hamburger__line--bottom {
     transform: none;
     opacity: 1;
 }
 
-.allered-hamburger__line {
+.ar-hamburger__line {
     width: 30px;
     height: 3px;
-    background: var(--allered-black);
+    background: var(--ar-black);
     border-radius: 4px;
     transition: all .5s cubic-bezier(.08, .81, .87, .71);
 }
 
-.allered-hamburger__line--top {
+.ar-hamburger__line--top {
 
     transform: rotate(45deg) translate(3px, 5px);
 }
 
-.allered-hamburger__line--middle {
+.ar-hamburger__line--middle {
     transform: rotate(495deg) translate(0px);
 }
 
-.allered-hamburger__line--bottom {
+.ar-hamburger__line--bottom {
     transform-origin: bottom right;
     transform: rotate(45deg);
     opacity: 0;
@@ -239,36 +237,36 @@
 /*VIEW ON SMARTPHONE*/
 @media only screen and (max-width:400px) {
 
-    .allered-brand {
+    .ar-brand {
         font-size: 1.4em;
         letter-spacing: .04px;
         margin-left: -20px;
     }
 
-    .allered-subbrand {
+    .ar-subbrand {
         font-size: 0.6em;
         letter-spacing: .04px;
         margin-top: -12px;
         margin-left: -20px;
     }
 
-    .allered-footer {
+    .ar-footer {
         font-size: 0.6em;
         letter-spacing: .04px;
     }
 
-    .allered-social {
+    .ar-social {
         height: 20px;
         width: 20px;
     }
 
-    .allered-slide__caption {
+    .ar-slide__caption {
         font-size: 0.5em;
         letter-spacing: .04px;
         left: 0em;
     }
 
-    .allered-slide__subcaption {
+    .ar-slide__subcaption {
         font-size: 0.9em;
         font-weight: 500;
         letter-spacing: .04px;
@@ -279,36 +277,36 @@
 /*VIEW ON TABLET*/
 @media only screen and (min-width: 401px) and (max-width:768px) {
 
-    .allered-brand {
+    .ar-brand {
         font-size: 1.4em;
         letter-spacing: .04px;
         margin-left: -20px;
     }
 
-    .allered-subbrand {
+    .ar-subbrand {
         font-size: 0.6em;
         letter-spacing: .04px;
         margin-top: -12px;
         margin-left: -20px;
     }
 
-    .allered-footer {
+    .ar-footer {
         font-size: 0.6em;
         letter-spacing: .04px;
     }
 
-    .allered-social {
+    .ar-social {
         height: 20px;
         width: 20px;
     }
 
-    .allered-slide__caption {
+    .ar-slide__caption {
         font-size: 0.7em;
         letter-spacing: .04px;
         left: 0em;
     }
 
-    .allered-slide__subcaption {
+    .ar-slide__subcaption {
         font-size: 0.9em;
         font-weight: 500;
         letter-spacing: .04px;
@@ -319,7 +317,7 @@
 @media only screen and (max-width:961px) {}
 
 @media (min-width: 1024px) {
-    .allered-container__glide {
+    .ar-container__glide {
         max-width: 800px;
         margin: 0 auto;
     }

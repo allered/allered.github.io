@@ -1,9 +1,9 @@
 :root {
-    --allered-red: #D70909;
-    --allered-black: #0B0B0B;
-    --allered-framesize: 8px;
-    --allered-white: #FBFBFB;
-    --allered-fontfamily: "Helvetica Neue", Arial, sans-serif;
+    --ar-red: #D70909;
+    --ar-black: #0B0B0B;
+    --ar-framesize: 8px;
+    --ar-white: #FBFBFB;
+    --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -20,51 +20,51 @@ header {
     padding: 3% 5% 6% 5%;
 }
 
-.allered-brand {
-    background-color: var(--allered-white);
-    font-family: var(--allered-fontfamily);
+.ar-brand {
+    background-color: var(--ar-white);
+    font-family: var(--ar-fontfamily);
     font-weight: 600;
     font-size: 2.5em;
-    color: var(--allered-black);
+    color: var(--ar-black);
 }
 
-.allered-subbrand {
-    background-color: var(--allered-white);
-    font-family: var(--allered-fontfamily);
+.ar-subbrand {
+    background-color: var(--ar-white);
+    font-family: var(--ar-fontfamily);
     font-weight: 500;
     font-size: 0.9em;
-    color: var(--allered-black);
+    color: var(--ar-black);
     margin-top: -8px;
 }
 
-.allered-navitem
+.ar-navitem
 {
     display: inline-block;
     padding: 5px;
-    background-color: var(--allered-white);
-    font-family: var(--allered-fontfamily);
+    background-color: var(--ar-white);
+    font-family: var(--ar-fontfamily);
     font-weight: 500;
     font-size: 0.9em;
-    color: var(--allered-black);
+    color: var(--ar-black);
 }
 
-.allered-navlinks {
+.ar-navlinks {
     list-style: none;
 }
 
-.allered-navlinks li {
+.ar-navlinks li {
     display: inline-block;
 }
 
-.allered-navlinks li a {
+.ar-navlinks li a {
     transition: all 0.3s ease 0s;
 }
 
-.allered-navlinks li a:hover {
-    color: var(--allered-red);
+.ar-navlinks li a:hover {
+    color: var(--ar-red);
 }
 
-.allered-current {
+.ar-current {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -75,8 +75,8 @@ header {
     border: 0;
 }
 
-.allered-current-focusable:active,
-.allered-current-focusable:focus {
+.ar-current-focusable:active,
+.ar-current-focusable:focus {
     position: static;
     width: auto;
     height: auto;
@@ -86,11 +86,49 @@ header {
 }
 
 /*WHEN MENU ITEM IS NOT ACTIVE*/
-.allered-navitem .allered-link {
-    color: var(--allered-black);
+.ar-navitem .ar-link {
+    color: var(--ar-black);
 }
 
 /*WHEN MENU ITEM IS ACTIVE*/
-.allered-navitem.active .allered-link {
-    color: var(--allered-red);
+.ar-navitem.active .ar-link {
+    color: var(--ar-red);
+}
+
+
+
+/*VIEW ON SMARTPHONE*/
+@media only screen and (max-width:400px) {
+
+    .ar-brand {
+        font-size: 1.4em;
+        letter-spacing: .04px;
+        margin-left: -20px;
+    }
+
+    .ar-subbrand {
+        font-size: 0.6em;
+        letter-spacing: .04px;
+        margin-top: -12px;
+        margin-left: -20px;
+    }
+}
+
+
+/*VIEW ON TABLET*/
+@media only screen and (min-width: 401px) and (max-width:768px) {
+
+    .ar-brand {
+        font-size: 1.4em;
+        letter-spacing: .04px;
+        margin-left: -20px;
+    }
+
+    .ar-subbrand {
+        font-size: 0.6em;
+        letter-spacing: .04px;
+        margin-top: -12px;
+        margin-left: -20px;
+    }
+
 }

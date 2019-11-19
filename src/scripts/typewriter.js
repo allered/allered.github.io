@@ -15,7 +15,7 @@ var aText = new Array(
     {
      sContents =  ' ';
      iRow = Math.max(0, iIndex-iScrollAt);
-     var destination = document.querySelector('.allered-typewriter');
+     var destination = document.querySelector('.ar-typewriter');
      
      while ( iRow < iIndex ) {
       sContents += aText[iRow++] + '<br />';

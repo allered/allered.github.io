@@ -14,4 +14,4 @@ class Backtotop {
   }
 }
 
-new Backtotop(document.querySelector('.allered-backtotop'));
+new Backtotop(document.querySelector('.ar-backtotop'));

@@ -1,9 +1,9 @@
 :root {
-    --allered-red: #D70909;
-    --allered-red-black: #0B0B0B;
-    --allered-framesize: 8px;
-    --allered-white: #FBFBFB;
-    --allered-fontfamily: "Helvetica Neue", Arial, sans-serif;
+    --ar-red: #D70909;
+    --ar-red-black: #0B0B0B;
+    --ar-framesize: 8px;
+    --ar-white: #FBFBFB;
+    --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
 
 }
 
@@ -21,7 +21,7 @@
 #fs-frm fieldset,
 #fs-frm optgroup,
 #fs-frm label {
-    font-family: var(--allered-fontfamily);
+    font-family: var(--ar-fontfamily);
     font-size: 0.9em;
     font-weight: 500;
     text-transform: uppercase;
@@ -48,8 +48,8 @@
 #fs-frm select,
 #fs-frm button,
 #fs-frm textarea {
-    border: 2px solid var(--allered-red);
-    background-color: var(--allered-white);
+    border: 2px solid var(--ar-red);
+    background-color: var(--ar-white);
     padding: .65em 1em;
     margin-bottom: 0em;
     margin-top: 1.2em;
@@ -58,10 +58,10 @@
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
-    background-color: var(--allered-white);
+    background-color: var(--ar-white);
     outline-style: solid;
     outline-width: thin;
-    outline-color: var(--allered-red);
+    outline-color: var(--ar-red);
     outline-offset: -1px;
 }
 
@@ -90,8 +90,8 @@
 #fs-frm [type="submit"]:focus,
 #fs-frm [type="reset"]:focus {
     outline: none;
-    background-color: var(--allered-red);
-    color: var(--allered-white);
+    background-color: var(--ar-red);
+    color: var(--ar-white);
 }
 
 #fs-frm [type="submit"],
