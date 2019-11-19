@@ -86,12 +86,12 @@ header {
 }
 
 /*WHEN MENU ITEM IS NOT ACTIVE*/
-.ar-navitem .ar-link {
+.ar-navitem .ar-navlink {
     color: var(--ar-black);
 }
 
 /*WHEN MENU ITEM IS ACTIVE*/
-.ar-navitem.active .ar-link {
+.ar-navitem.active .ar-navlink {
     color: var(--ar-red);
 }
 
