@@ -43,7 +43,7 @@
 #fs-frm label,
 #fs-frm legend {
     font-size: .75em;
-    padding-left: 5px;
+    padding-left: 2%;
     display: flex;
 }
 
@@ -72,6 +72,7 @@
 #fs-frm [type="text"],
 #fs-frm [type="email"] {
     width: calc(100% - 150px);
+    min-width: 250px;
 }
 
 #fs-frm button,
