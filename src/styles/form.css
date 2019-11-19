@@ -14,9 +14,6 @@
 
 
 #fs-frm {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 200px);
     padding-bottom: 50px;
 }
 
@@ -35,9 +32,9 @@
     border: none;
     border-radius: 5px;
     display: block;
-    width: 100%;
+    width: calc(100% - 150px);
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     -webkit-appearance: none;
     -moz-appearance: none;
 
@@ -74,7 +71,7 @@
 
 #fs-frm [type="text"],
 #fs-frm [type="email"] {
-    width: 100%;
+    width: calc(100% - 150px);
 }
 
 #fs-frm button,
