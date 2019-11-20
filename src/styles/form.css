@@ -32,12 +32,11 @@
     border: none;
     border-radius: 5px;
     display: block;
-    width: calc(100% - 150px);
     padding: 0;
     margin: 0 auto;
     -webkit-appearance: none;
     -moz-appearance: none;
-
+    width: calc(100% - 150px);
 }
 
 #fs-frm label,
@@ -57,6 +56,7 @@
     padding: .65em 1em;
     margin-bottom: 0.1em;
     margin-top: 1.2em;
+    width: calc(100% - 150px);
 }
 
 #fs-frm input:focus,
@@ -128,4 +128,42 @@
 #fs-frm fieldset.locale input[name="city"],
 #fs-frm fieldset.locale select[name="state"] {
     margin-right: 3%;
+}
+
+
+/*VIEW ON SMARTPHONE*/
+@media only screen and (max-width:400px) {
+
+    #fs-frm input,
+#fs-frm select,
+#fs-frm button,
+#fs-frm textarea {
+    width: 200px;
+}
+
+#fs-frm [type="text"],
+    #fs-frm [type="email"] {
+        width: 200px;
+    }
+
+}
+
+
+/*VIEW ON TABLET*/
+@media only screen and (min-width: 451px) and (max-width:800px) {
+
+    #fs-frm input,
+    #fs-frm select,
+    #fs-frm button,
+    #fs-frm textarea,
+    #fs-frm fieldset,
+    #fs-frm optgroup,
+    #fs-frm label {
+        width: 250px;
+    }
+
+    #fs-frm [type="text"],
+    #fs-frm [type="email"] {
+        width: 250px;
+    }
 }
