@@ -10,6 +10,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 /* FRAME AROUND WEBSITE */
@@ -141,9 +142,8 @@
     color: var(--ar-black);
 }
 
-#ar-slide__link {
+.ar-slide__link {
     color: var(--ar-red);
-    text-decoration: none;
 }
 
 .ar-typewriter {
