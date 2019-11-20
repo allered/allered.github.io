@@ -36,7 +36,7 @@
     margin: 0 auto;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: calc(100% - 150px);
+    width: 600px;
 }
 
 #fs-frm label,
@@ -56,7 +56,7 @@
     padding: .65em 1em;
     margin-bottom: 0.1em;
     margin-top: 1.2em;
-    width: calc(100% - 150px);
+    width: 600px;
 }
 
 #fs-frm input:focus,
@@ -71,8 +71,7 @@
 
 #fs-frm [type="text"],
 #fs-frm [type="email"] {
-    width: calc(100% - 150px);
-    min-width: 250px;
+    width: 600px;
 }
 
 #fs-frm button,
@@ -134,23 +133,9 @@
 /*VIEW ON SMARTPHONE*/
 @media only screen and (max-width:400px) {
 
-    #fs-frm input,
-#fs-frm select,
-#fs-frm button,
-#fs-frm textarea {
-    width: 200px;
-}
-
-#fs-frm [type="text"],
-    #fs-frm [type="email"] {
-        width: 200px;
+    #fs-frm {
+        margin-top: 30px;
     }
-
-}
-
-
-/*VIEW ON TABLET*/
-@media only screen and (min-width: 451px) and (max-width:800px) {
 
     #fs-frm input,
     #fs-frm select,
@@ -159,11 +144,35 @@
     #fs-frm fieldset,
     #fs-frm optgroup,
     #fs-frm label {
-        width: 250px;
+        width: 200px;
     }
 
     #fs-frm [type="text"],
     #fs-frm [type="email"] {
-        width: 250px;
+        width: 200px;
+    }
+}
+
+
+/*VIEW ON TABLET*/
+@media only screen and (min-width: 451px) and (max-width:800px) {
+
+    #fs-frm {
+        margin-top: 30px;
+    }
+
+    #fs-frm input,
+    #fs-frm select,
+    #fs-frm button,
+    #fs-frm textarea,
+    #fs-frm fieldset,
+    #fs-frm optgroup,
+    #fs-frm label {
+        width: 300px;
+    }
+
+    #fs-frm [type="text"],
+    #fs-frm [type="email"] {
+        width: 300px;
     }
 }
