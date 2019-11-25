@@ -28,13 +28,13 @@
     </a>
 
     <menu>
-          <button class="ar-navbar__toggler hamburger hamburger--spring" type="button" data-toggle="collapse"
-              data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-              </span>
-          </button>
-      </menu>
+      <button class="ar-navbar__toggler hamburger hamburger--spring" type="button" data-toggle="collapse"
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </menu>
 
     <nav class="navbar-collapse justify-content-end collapse" id="navbarNav">
       <ul class="ar-navlinks">
@@ -51,6 +51,13 @@
         <li class="ar-navitem ">
           <a class="ar-navlink" href="/contact.html">CONTACT</a>
         </li>
+        <!-- <div class="ar-switch-wrapper"> -->
+          <label class="ar-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="ar-slider round"></div>
+          </label>
+          <!-- <span>Enable Dark Mode!</span> -->
+        <!-- </div> -->
       </ul>
     </nav>
 
@@ -161,6 +168,20 @@
   <script src="src/scripts/app.js"></script>
   <script src="src/scripts/hamburger.js"></script>
   <script src="src/scripts/backtotop.js"></script>
+
+  <script>
+    const toggleSwitch = document.querySelector('.ar-switch input[type="checkbox"]');
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+  </script>
 
 </body>
 

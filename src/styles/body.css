@@ -6,6 +6,14 @@
     --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
 }
 
+[data-theme="dark"] {
+    --ar-red: #D70909;
+    --ar-black: #1A2D2D;
+    --ar-white: #FFFAFA;
+}
+
+
+
 
 * {
     box-sizing: border-box;
@@ -57,6 +65,7 @@
     top: 0;
     width: 10px;
 }
+
 /* END OF FRAME CODE */
 
 /* BODY STYLE */
@@ -148,7 +157,7 @@
 }
 
 .ar-typewriter {
-    display:inline-block;
+    display: inline-block;
     text-align: center;
     padding: 55px;
     width: 20em;
@@ -156,6 +165,7 @@
     height: 50px;
     padding-top: 1em;
 }
+
 /* END OF BODY STYLE */
 
 
@@ -181,6 +191,7 @@
     height: 23px;
     width: 23px;
 }
+
 /* END OF FOOTER STYLE */
 
 
@@ -227,8 +238,7 @@
         max-width: 300px;
     }
 
-    .ar-column
-    {
+    .ar-column {
         width: auto;
         max-width: 300px;
     }
@@ -278,8 +288,7 @@
         max-width: 400px;
     }
 
-    .ar-column
-    {
+    .ar-column {
         width: auto;
         max-width: 400px;
     }
