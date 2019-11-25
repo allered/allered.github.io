@@ -51,13 +51,12 @@
         <li class="ar-navitem ">
           <a class="ar-navlink" href="/contact.html">CONTACT</a>
         </li>
-        <!-- <div class="ar-switch-wrapper"> -->
-          <label class="ar-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="ar-slider round"></div>
-          </label>
-          <!-- <span>Enable Dark Mode!</span> -->
-        <!-- </div> -->
+        <!-- DARK MODE SWITCH-->
+        <label class="ar-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="ar-slider round"></div>
+        </label>
+        <!-- <span class="ar-darkmode_label">DARK MODE</span> -->
       </ul>
     </nav>
 
@@ -171,12 +170,23 @@
 
   <script>
     const toggleSwitch = document.querySelector('.ar-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('data-theme');
+
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+      }
+    }
 
     function switchTheme(e) {
       if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
       } else {
         document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
       }
     }
 
