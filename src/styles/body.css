@@ -6,6 +6,7 @@
     --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,20 +15,21 @@
 }
 
 /* FRAME AROUND WEBSITE */
-.ar-app {
+
+.ar-body {
     background-color: #FBFBFB;
     font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
     padding: 10px;
     overflow-x: hidden;
 }
 
-.ar-app__frame {
+.ar-body__frame {
     background: var(--ar-red);
     position: fixed;
     z-index: 999;
 }
 
-.ar-app__frame--left {
+.ar-body__frame--left {
     height: 100vh;
     left: 0;
     top: 0;
@@ -35,21 +37,21 @@
 
 }
 
-.ar-app__frame--top {
+.ar-body__frame--top {
     width: 100vw;
     left: 0;
     top: 0;
     height: 10px;
 }
 
-.ar-app__frame--bottom {
+.ar-body__frame--bottom {
     width: 100vw;
     left: 0;
     bottom: 0;
     height: 10px;
 }
 
-.ar-app__frame--right {
+.ar-body__frame--right {
     height: 100vh;
     right: 0;
     top: 0;
