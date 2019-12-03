@@ -235,12 +235,10 @@ input:checked+.ar-slider:before {
     }
 
     .ar-navlinks {
-        font-size: 0.6em;
+        font-size: 0.3em !important;
         height: 40px;
         width: 70px;
     }
-
-    ;
 
 }
 
