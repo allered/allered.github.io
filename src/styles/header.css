@@ -1,17 +1,3 @@
-:root {
-    --ar-red: #D70909;
-    --ar-black: #0B0B0B;
-    --ar-framesize: 8px;
-    --ar-white: #FBFBFB;
-    --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
-}
-
-[data-theme="dark"] {
-    --ar-red: #D70909;
-    --ar-black: #1A2D2D;
-    --ar-white: #FFFAFA;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;

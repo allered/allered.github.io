@@ -1,0 +1,28 @@
+/* :root {
+    --ar-red: #D70909;
+    --ar-black: #0B0B0B;
+    --ar-framesize: 8px;
+    --ar-white: #FBFBFB;
+    --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
+}
+
+:root[data-theme="dark"] {
+    --ar-red: #D70909;
+    --ar-black:#FBFBFB;
+    --ar-white: #1A2D2D;
+} */
+
+:root {
+    --ar-red: #D70909;
+    --ar-black: #0B0B0B;
+    --ar-framesize: 8px;
+    --ar-white: #FBFBFB;
+    --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ar-white:#FBFBFB;
+        --ar-black: rgb(10, 18, 18);
+    }
+}
