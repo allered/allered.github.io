@@ -102,52 +102,6 @@ header {
     border: 3px solid #0B0B0B;
 }
 
-/* HAMBURGER MENU STYLE */
-.ar-hamburger {
-    overflow: hidden;
-    width: 30px;
-    height: 17px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 0;
-    padding: 0;
-    outline: none;
-}
-
-.ar-hamburger.collapsed .ar-hamburger__line--top,
-.ar-hamburger.collapsed .ar-hamburger__line--middle,
-.ar-hamburger.collapsed .ar-hamburger__line--bottom {
-    transform: none;
-    opacity: 1;
-}
-
-.ar-hamburger__line {
-    width: 30px;
-    height: 3px;
-    background: var(--ar-black);
-    border-radius: 4px;
-    transition: all .5s cubic-bezier(.08, .81, .87, .71);
-}
-
-.ar-hamburger__line--top {
-
-    transform: rotate(45deg) translate(3px, 5px);
-}
-
-.ar-hamburger__line--middle {
-    transform: rotate(495deg) translate(0px);
-}
-
-.ar-hamburger__line--bottom {
-    transform-origin: bottom right;
-    transform: rotate(45deg);
-    opacity: 0;
-}
-
-/* END OF HAMBURGER MENU STYLE */
-
 
 /*DARK MODE SWITCH*/
 /* .ar-switch-wrapper {
