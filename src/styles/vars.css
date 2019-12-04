@@ -23,6 +23,6 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --ar-white:#FBFBFB;
-        --ar-black: rgb(10, 18, 18);
+        --ar-black: #0B0B0B;
     }
 }
