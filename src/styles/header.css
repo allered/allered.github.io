@@ -189,7 +189,7 @@ input:checked+.ar-slider:before {
     }
 
     .ar-navlinks {
-        display: inline;
+        display: inline-block;
         position: absolute;
         left:35px;
         top:100px;
