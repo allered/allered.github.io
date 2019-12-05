@@ -88,7 +88,7 @@
     vertical-align: middle;
     text-align: center;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 .ar-image__caption {
@@ -269,12 +269,12 @@
 
     .ar-container {
         width: auto;
-        max-width: 400px;
+        max-width: 450px;
     }
 
     .ar-column {
         width: auto;
-        max-width: 400px;
+        max-width: 450px;
     }
 }
 
