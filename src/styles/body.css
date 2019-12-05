@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -183,19 +182,6 @@
 /*VIEW ON SMARTPHONE*/
 @media only screen and (max-width:450px) {
 
-    /* .ar-brand {
-        font-size: 1.5em;
-        letter-spacing: .04px;
-        margin-left: -20px;
-    }
-
-    .ar-subbrand {
-        font-size: 0.7em;
-        letter-spacing: .04px;
-        margin-top: -12px;
-        margin-left: -20px;
-    } */
-
     .ar-footer {
         font-size: 0.6em;
         letter-spacing: .04px;
@@ -206,8 +192,8 @@
         width: 20px;
     }
 
-    .ar-image__caption, .ar-image__subcaption
-    {
+    .ar-image__caption,
+    .ar-image__subcaption {
         width: 200px;
         letter-spacing: .04px;
     }
@@ -237,19 +223,6 @@
 
 /*VIEW ON TABLET*/
 @media only screen and (min-width: 451px) and (max-width:800px) {
-
-    .ar-brand {
-        font-size: 1.4em;
-        letter-spacing: .04px;
-        margin-left: -20px;
-    }
-
-    .ar-subbrand {
-        font-size: 0.6em;
-        letter-spacing: .04px;
-        margin-top: -12px;
-        margin-left: -20px;
-    }
 
     .ar-footer {
         font-size: 0.6em;
