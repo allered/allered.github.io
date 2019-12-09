@@ -192,11 +192,11 @@
         width: 20px;
     }
 
-    .ar-image__caption,
+    /* .ar-image__caption,
     .ar-image__subcaption {
         width: 200px;
         letter-spacing: .04px;
-    }
+    } */
 
     .ar-slide__caption {
         font-size: 0.5em;
@@ -217,7 +217,12 @@
 
     .ar-column {
         width: auto;
-        max-width: 300px;
+        max-width: 350px;
+    }
+
+    .ar-row {
+        width: auto;
+        max-width: 350px;
     }
 }
 

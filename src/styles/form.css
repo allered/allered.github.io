@@ -91,7 +91,7 @@
 }
 
 #fs-frm [type="submit"],
-#fs-frm [type="reset"] {
+#fs-frm [type="reset"]{
     margin-bottom: 0;
 }
 
@@ -123,7 +123,8 @@
 
 
 /*VIEW ON SMARTPHONE*/
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:450px) {
+
 
     #fs-frm {
         margin-top: 30px;
@@ -136,15 +137,15 @@
     #fs-frm fieldset,
     #fs-frm optgroup,
     #fs-frm label {
-        width: 200px;
+        width: 250px;
     }
 
     #fs-frm [type="text"],
-    #fs-frm [type="email"] {
-        width: 200px;
+    #fs-frm [type="email"]
+    {
+        width: 250px;
     }
 }
-
 
 /*VIEW ON TABLET*/
 @media only screen and (min-width: 451px) and (max-width:800px) {
@@ -168,3 +169,4 @@
         width: 300px;
     }
 }
+
