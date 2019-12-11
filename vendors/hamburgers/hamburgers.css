@@ -27,11 +27,11 @@
 }
 
 .hamburger:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .hamburger.is-active:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .hamburger.is-active .hamburger-inner,

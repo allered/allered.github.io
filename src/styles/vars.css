@@ -27,6 +27,11 @@
     --ar-white: #0B0B0B;
 }
 
+.dark .ar-image
+{
+    box-shadow: none;
+}
+
 .light {
     --ar-white: #FBFBFB;
     --ar-black: #0B0B0B;

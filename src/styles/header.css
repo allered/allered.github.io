@@ -40,10 +40,13 @@ header {
 .ar-navlinks {
     list-style: none;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .ar-navlinks__item {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: 5px;
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
@@ -56,32 +59,13 @@ header {
 .ar-navlinks__item a {
     color: currentColor;  /*EREDITA IL COLORE DALL'ELEMENTO PADRE SOPRA*/
     transition: all 0.3s ease 0s;
+    font-weight: 500;
 }
 
 .ar-navlinks__item a:hover {
     color: var(--ar-red);
 }
 
-.ar-current {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.ar-current-focusable:active,
-.ar-current-focusable:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    white-space: normal;
-}
 
 /*WHEN MENU ITEM IS NOT ACTIVE*/
 .ar-navitem .ar-navlink {
@@ -89,7 +73,7 @@ header {
 }
 
 /*WHEN MENU ITEM IS ACTIVE*/
-.ar-navitem.active .ar-navlink {
+.ar-navlinks__item--active {
     color: var(--ar-red);
 }
 
@@ -120,6 +104,7 @@ header {
     position: relative;
     width: 40px;
     user-select: none;
+    margin-left: 20px;
 }
 
 .ar-switch input {
@@ -127,7 +112,7 @@ header {
 }
 
 .ar-slider {
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(201, 201, 201);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -189,7 +174,7 @@ input:checked+.ar-slider:before {
         font-size: 0.7em;
         letter-spacing: .04px;
         margin-left: 10px;
-        height: 75px;
+        height: 45px;
     }
 
     .ar-hamburger {
@@ -198,7 +183,7 @@ input:checked+.ar-slider:before {
 
     .ar-navbar
     {
-        display: none;
+        display: flex;
         position: fixed;
         align-items: center;
         justify-content: center;
@@ -207,11 +192,19 @@ input:checked+.ar-slider:before {
         top: 0;
         left: 0;
         background-color: var(--ar-red);
-        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s ease-out, visibility .5s ease-out;
     }
 
     .ar-navbar--active{
-        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .ar-navbar--active .ar-navlinks__item
+    {
+        opacity: 1;
     }
 
     .ar-navlinks {
@@ -226,6 +219,8 @@ input:checked+.ar-slider:before {
     {
         background: none;
         text-align: center;
+        opacity: 0;
+        transition: opacity .2s ease-out .4s;
     }
 
 }

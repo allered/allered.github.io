@@ -33,9 +33,8 @@
     <nav class="ar-navbar" id="navbar">
 
       <ul class="ar-navlinks">
-        <li class="ar-navlinks__item active">
-          <a class="ar-navlink" href="/index.html">PHOTO
-            <span class="ar-current">(current)</span></a>
+        <li class="ar-navlinks__item ar-navlinks__item--active">
+          <a class="ar-navlink" href="/index.html">PHOTO</a>
         </li>
         <li class="ar-navlinks__item">
           <a class="ar-navlink" href="/wedding.html">WEDDING</a>
@@ -210,7 +209,7 @@
     if (togglers.length > 0) {
       togglers.forEach(function (toggle) {
         toggle.addEventListener("click", function () {
-          var target = this.href;
+          var target = this.getAttribute('href');
           document.querySelector(target).classList.toggle("ar-navbar--active");
         }, false);
       });

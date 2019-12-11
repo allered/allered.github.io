@@ -88,6 +88,9 @@
     text-align: center;
     margin: 0 auto;
     width: 100%;
+    -webkit-box-shadow: 11px 12px 43px -16px rgba(215,9,9,0.61);
+    -moz-box-shadow: 11px 12px 43px -16px rgba(215,9,9,0.61);
+    box-shadow: 11px 12px 43px -16px rgba(215,9,9,0.61);
 }
 
 .ar-image__caption {
@@ -139,6 +142,7 @@
 }
 
 .ar-typewriter {
+    color: var(--ar-black);
     display: inline-block;
     text-align: center;
     padding: 55px;

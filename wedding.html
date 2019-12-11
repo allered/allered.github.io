@@ -24,39 +24,42 @@
   <div class="ar-body__frame ar-body__frame--bottom"></div>
 
   <header>
+
     <a href="index.html">
       <div class="ar-brand">ALLERED</div>
       <div class="ar-subbrand">PHOTOGRAPHER | WEB DEVELOPER</div>
     </a>
 
-  
-  <nav class="navbar-collapse justify-content-end collapse" id="navbarNav">
+    <nav class="ar-navbar" id="navbar">
+
       <ul class="ar-navlinks">
-        <li class="ar-navitem">
+        <li class="ar-navlinks__item">
           <a class="ar-navlink" href="/index.html">PHOTO</a>
         </li>
-        <li class="ar-navitem active">
-          <a class="ar-navlink" href="/wedding.html">WEDDING
-            <span class="ar-current">(current)</span></a>
+        <li class="ar-navlinks__item ar-navlinks__item--active">
+          <a class="ar-navlink" href="/wedding.html">WEDDING</a>
         </li>
-        <li class="ar-navitem">
+        <li class="ar-navlinks__item">
           <a class="ar-navlink" href="/webdesign.html">WEBSITES</a>
         </li>
-        <li class="ar-navitem ">
+        <li class="ar-navlinks__item ">
           <a class="ar-navlink" href="/contact.html">ABOUT</a>
         </li>
         <!-- DARK MODE SWITCH-->
-        <li class="ar-navitem ">
+        <li class="ar-navlinks__item ">
           <label class="ar-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="ar-slider round"></div>
-          </label>
-          <span class="ar-darkmode_label">DARK MODE</span>
+            <!-- </label>
+          <span class="ar-darkmode_label">DARK MODE</span> -->
         </li>
       </ul>
-
     </nav>
-
+    <a class="hamburger hamburger--spring ar-hamburger" href="#navbar" data-toggle="navbar">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </a>
   </header>
 
   <!-- BODY -->
