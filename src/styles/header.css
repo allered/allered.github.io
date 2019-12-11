@@ -223,6 +223,15 @@ input:checked+.ar-slider:before {
         transition: opacity .2s ease-out .4s;
     }
 
+    .ar-navlinks__item--active
+    {
+        color:white;
+    }
+
+    .ar-switch
+    {
+        margin:0;
+    }
 }
 
 
