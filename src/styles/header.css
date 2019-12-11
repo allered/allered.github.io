@@ -179,6 +179,7 @@ input:checked+.ar-slider:before {
 
     .ar-hamburger {
         display: inline-flex;
+        z-index: 1;
     }
 
     .ar-navbar
@@ -195,6 +196,7 @@ input:checked+.ar-slider:before {
         opacity: 0;
         visibility: hidden;
         transition: opacity .5s ease-out, visibility .5s ease-out;
+        z-index: 1;
     }
 
     .ar-navbar--active{
