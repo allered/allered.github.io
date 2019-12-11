@@ -37,7 +37,12 @@ header {
     color: var(--ar-black);
 }
 
-.ar-navitem {
+.ar-navlinks {
+    list-style: none;
+    height: 100%;
+}
+
+.ar-navlinks__item {
     display: inline-block;
     padding: 5px;
     background-color: var(--ar-white);
@@ -45,21 +50,15 @@ header {
     font-weight: 500;
     font-size: 0.9em;
     color: var(--ar-black);
+    height: 100%;
 }
 
-.ar-navlinks {
-    list-style: none;
-}
-
-.ar-navlinks li {
-    display: inline-block;
-}
-
-.ar-navlinks li a {
+.ar-navlinks__item a {
+    color: currentColor;  /*EREDITA IL COLORE DALL'ELEMENTO PADRE SOPRA*/
     transition: all 0.3s ease 0s;
 }
 
-.ar-navlinks li a:hover {
+.ar-navlinks__item a:hover {
     color: var(--ar-red);
 }
 
@@ -94,28 +93,33 @@ header {
     color: var(--ar-red);
 }
 
-.ar-navbar__toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    background-color: transparent;
-    border: 3px solid #0B0B0B;
-}
-
-
-/*DARK MODE SWITCH*/
-/* .ar-switch-wrapper {
+.ar-navbar {
     display: flex;
     align-items: center;
-  } */
+    height: 50px;
+}
+
+/* HAMBURGER */
+.ar-hamburger {
+    display: none;
+}
+
+.ar-hamburger:focus {
+    outline: none;
+}
+
+/*DARK MODE SWITCH*/
+.ar-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
 
 .ar-switch {
     display: inline-block;
     height: 24px;
     position: relative;
     width: 40px;
-    top: 7px;
-    left: 4px;
+    user-select: none;
 }
 
 .ar-switch input {
@@ -188,14 +192,40 @@ input:checked+.ar-slider:before {
         height: 75px;
     }
 
+    .ar-hamburger {
+        display: inline-flex;
+    }
+
+    .ar-navbar
+    {
+        display: none;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: var(--ar-red);
+        z-index: 999;
+    }
+
+    .ar-navbar--active{
+        display: flex;
+    }
+
     .ar-navlinks {
-        display: inline-block;
-        position: absolute;
-        left: 35px;
-        top: 100px;
-        font-size: 0.6em;
-        height: 20px;
-        width: 200px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 35%;
+        width:100%;
+    }
+
+    .ar-navlinks__item
+    {
+        background: none;
+        text-align: center;
     }
 
 }

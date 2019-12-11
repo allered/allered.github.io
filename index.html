@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Alessandro Rossi - Photographer | Web Developer</title>
-  <link rel="stylesheet" href="vendors/hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" href="vendors/hamburgers/hamburgers.css">
   <link rel="stylesheet" href="vendors/normalize-css/reset.css">
   <link rel="stylesheet" href="src/styles/vars.css">
   <link rel="stylesheet" href="src/styles/header.css">
@@ -30,38 +30,37 @@
       <div class="ar-subbrand">PHOTOGRAPHER | WEB DEVELOPER</div>
     </a>
 
-    <nav class="navbar-collapse justify-content-end collapse" id="navbarNav">
+    <nav class="ar-navbar" id="navbar">
 
       <ul class="ar-navlinks">
-        <li class="ar-navitem active">
+        <li class="ar-navlinks__item active">
           <a class="ar-navlink" href="/index.html">PHOTO
             <span class="ar-current">(current)</span></a>
         </li>
-        <li class="ar-navitem">
+        <li class="ar-navlinks__item">
           <a class="ar-navlink" href="/wedding.html">WEDDING</a>
         </li>
-        <li class="ar-navitem">
+        <li class="ar-navlinks__item">
           <a class="ar-navlink" href="/webdesign.html">WEBSITES</a>
         </li>
-        <li class="ar-navitem ">
+        <li class="ar-navlinks__item ">
           <a class="ar-navlink" href="/contact.html">ABOUT</a>
         </li>
         <!-- DARK MODE SWITCH-->
-        <li class="ar-navitem ">
+        <li class="ar-navlinks__item ">
           <label class="ar-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="ar-slider round"></div>
-          </label>
-          <span class="ar-darkmode_label">DARK MODE</span>
+            <!-- </label>
+          <span class="ar-darkmode_label">DARK MODE</span> -->
         </li>
       </ul>
-      <button class="hamburger hamburger--spring" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
     </nav>
-
+    <a class="hamburger hamburger--spring ar-hamburger" href="#navbar" data-toggle="navbar">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </a>
   </header>
 
 
@@ -196,13 +195,23 @@
   <script src="src/scripts/app.js"></script>
   <script src="src/scripts/backtotop.js"></script>
   <script src="src/scripts/darkmode.js"></script>
-  
+
   <script>
     var hamburgers = document.querySelectorAll(".hamburger");
     if (hamburgers.length > 0) {
       hamburgers.forEach(function (hamburger) {
         hamburger.addEventListener("click", function () {
           this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+
+    var togglers = document.querySelectorAll('[data-toggle="navbar"]');
+    if (togglers.length > 0) {
+      togglers.forEach(function (toggle) {
+        toggle.addEventListener("click", function () {
+          var target = this.href;
+          document.querySelector(target).classList.toggle("ar-navbar--active");
         }, false);
       });
     }
