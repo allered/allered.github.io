@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="src/styles/header.css">
   <link rel="stylesheet" href="src/styles/body.css">
   <link rel="stylesheet" href="src/styles/backtotop.css">
+  <link rel="stylesheet" href="vendors/hamburgers/hamburgers.min.css">
 </head>
 
 
@@ -53,7 +54,11 @@
           <span class="ar-darkmode_label">DARK MODE</span>
         </li> -->
       </ul>
-
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </nav>
 
   </header>
@@ -190,6 +195,16 @@
   <script src="src/scripts/app.js"></script>
   <script src="src/scripts/backtotop.js"></script>
   <script src="src/scripts/darkmode.js"></script>
+  <script>
+  var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      hamburgers.forEach(function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+  </script>
 
 </body>
 
