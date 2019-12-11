@@ -9,7 +9,7 @@
 
 .ar-body {
     background-color: var(--ar-white);
-    font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+    font-family: var(--ar-fontfamily);
     padding: 10px;
     overflow-x: hidden;
 }
@@ -92,7 +92,7 @@
 
 .ar-image__caption {
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--ar-fontfamily);
     font-weight: 600;
     font-style: normal;
     font-size: 0.7em;
@@ -103,8 +103,8 @@
 
 .ar-image__subcaption {
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 400;
+    font-family: var(--ar-fontfamily);
+    font-weight: 500;
     font-style: normal;
     font-size: 1em;
     letter-spacing: .045px;
@@ -113,7 +113,7 @@
 
 .ar-slide__caption {
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--ar-fontfamily);
     font-weight: 600;
     font-style: normal;
     font-size: 0.7em;
@@ -126,7 +126,7 @@
 
 .ar-slide__subcaption {
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--ar-fontfamily);
     font-weight: 400;
     font-style: normal;
     font-size: 1em;
@@ -155,8 +155,8 @@
 /* FOOTER STYLE */
 .ar-footer {
     color: var(--ar-black);
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 600;
+    font-family: var(--ar-fontfamily);
+    font-weight: 500;
     font-style: normal;
     font-size: 0.7em;
     letter-spacing: .03px;
