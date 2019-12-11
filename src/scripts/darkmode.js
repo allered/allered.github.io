@@ -2,8 +2,8 @@ const toggleSwitch = document.querySelector('.ar-switch input[type="checkbox"]')
 const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-  
+    document.documentElement.setAttribute('class', currentTheme);
+
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
     }
@@ -11,15 +11,14 @@ if (currentTheme) {
 
 function switchTheme(e) {
     if (e.target.checked) {
-        document.documentElement.style.setProperty('--ar-black', '#FBFBFB');
-        document.documentElement.style.setProperty('--ar-white', '#0B0B0B');
+        document.documentElement.setAttribute('class', 'dark');
+
         localStorage.setItem('theme', 'dark');
+    } 
+    else {
+        document.documentElement.setAttribute('class', 'light');
+        localStorage.setItem('theme', 'light');
     }
-    else {        
-        document.documentElement.style.setProperty('--ar-white', '#FBFBFB');
-        document.documentElement.style.setProperty('--ar-black', '#0B0B0B');
-          localStorage.setItem('theme', 'light');
-    }    
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);

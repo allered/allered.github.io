@@ -12,15 +12,6 @@
     --ar-white: #1A2D2D;
 } */
 
-/* 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --ar-black:#FBFBFB;
-        --ar-white: #0B0B0B;
-    }
-     */
-
-     
 
 :root {
     --ar-red: #D70909;
@@ -28,4 +19,15 @@
     --ar-framesize: 8px;
     --ar-white: #FBFBFB;
     --ar-fontfamily: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* DARK MODE CLASS SWITCH */
+.dark {
+    --ar-black: #FBFBFB;
+    --ar-white: #0B0B0B;
+}
+
+.light {
+    --ar-white: #FBFBFB;
+    --ar-black: #0B0B0B;
 }
