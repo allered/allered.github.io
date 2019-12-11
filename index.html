@@ -47,13 +47,13 @@
           <a class="ar-navlink" href="/contact.html">ABOUT</a>
         </li>
         <!-- DARK MODE SWITCH-->
-        <!-- <li class="ar-navitem ">
+        <li class="ar-navitem ">
           <label class="ar-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="ar-slider round"></div>
           </label>
           <span class="ar-darkmode_label">DARK MODE</span>
-        </li> -->
+        </li>
       </ul>
       <button class="hamburger hamburger--spring" type="button">
         <span class="hamburger-box">
@@ -83,10 +83,10 @@
       </div>
 
       <div class="ar-column">
-          <img class="ar-image" src="dist/images/commercial/ilminatore.jpg" alt="Il Minatore - Pizzeria Commercial">
-          <p class="ar-image__caption">Il Minatore -
-            <span class="ar-image__subcaption">Pizzeria Commercial</span></p>
-        </div>
+        <img class="ar-image" src="dist/images/commercial/ilminatore.jpg" alt="Il Minatore - Pizzeria Commercial">
+        <p class="ar-image__caption">Il Minatore -
+          <span class="ar-image__subcaption">Pizzeria Commercial</span></p>
+      </div>
 
       <div class="ar-column">
         <img class="ar-image" src="dist/images/portrait/Fivesenses3.jpg" alt="Bikini Models on the beach">
@@ -196,11 +196,12 @@
   <script src="src/scripts/app.js"></script>
   <script src="src/scripts/backtotop.js"></script>
   <script src="src/scripts/darkmode.js"></script>
+  
   <script>
-  var hamburgers = document.querySelectorAll(".hamburger");
+    var hamburgers = document.querySelectorAll(".hamburger");
     if (hamburgers.length > 0) {
-      hamburgers.forEach(function(hamburger) {
-        hamburger.addEventListener("click", function() {
+      hamburgers.forEach(function (hamburger) {
+        hamburger.addEventListener("click", function () {
           this.classList.toggle("is-active");
         }, false);
       });
