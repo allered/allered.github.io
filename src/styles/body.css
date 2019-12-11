@@ -116,7 +116,7 @@
     font-family: var(--ar-fontfamily);
     font-weight: 600;
     font-style: normal;
-    font-size: 0.7em;
+    font-size: 0.75em;
     letter-spacing: .04px;
     text-align: left;
     position: absolute;
@@ -129,7 +129,6 @@
     font-family: var(--ar-fontfamily);
     font-weight: 500;
     font-style: normal;
-    font-size: 1em;
     letter-spacing: .045px;
     text-align: left;
     color: var(--ar-black);
