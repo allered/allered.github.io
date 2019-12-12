@@ -26,7 +26,7 @@
   border-width: 2px 0px 0px 2px;
   padding: 0;
   transition: border-width 150ms ease-in-out;
-  z-index: 3;
+  z-index: 0;
 }
 
 .glide__arrow:hover {
@@ -45,7 +45,7 @@
 
 .glide__bullets {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   bottom: 2em;
   left: 50%;
   display: inline-flex;
