@@ -143,6 +143,17 @@
     color: var(--ar-red);
 }
 
+.ar-title
+{
+    display: flex;
+    align-items: center;
+    font-family: var(--ar-fontfamily);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+    margin: 40px;
+}
+
 .ar-typewriter {
     color: var(--ar-black);
     display: inline-block;
