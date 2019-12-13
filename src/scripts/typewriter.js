@@ -1,8 +1,8 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "My name is Alessandro Rossi",
-    "I'm a photographer and web developer from Cesenatico, Italy.",
-    "Feel free to contact me if you have any question or business inquiries by filling the form below! ");
+    "Hi :) my name is Alessandro Rossi",
+    "I'm a photographer and Digital Designer from Cesenatico, Italy.",
+    "I design websites using Sketch, Webflow and Squarespace, I also like front-end development using CSS and Javascript.");
     var iSpeed = 90; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array
