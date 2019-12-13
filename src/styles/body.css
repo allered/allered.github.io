@@ -102,6 +102,7 @@
     letter-spacing: .04px;
     justify-content: flex-start;
     padding-bottom: 5%;
+    padding-top:1%;
     color: var(--ar-black);
 }
 
