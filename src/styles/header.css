@@ -112,7 +112,7 @@ header {
 }
 
 .ar-slider {
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(225, 223, 223);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -134,7 +134,7 @@ header {
 }
 
 input:checked+.ar-slider {
-    background-color: rgb(33, 57, 57);
+    background-color: rgb(17, 31, 31);
 
 }
 
