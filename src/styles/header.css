@@ -33,7 +33,7 @@ header {
     position: relative;
     top:-12px;
     width: 50px;
-    background-color: var(--ar-white);
+    background-color: transparent;
     font-family: var(--ar-fontfamily);
     font-weight: 500;
     font-size: 0.65em;
