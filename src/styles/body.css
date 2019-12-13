@@ -103,7 +103,7 @@
     justify-content: flex-start;
     padding-bottom: 5%;
     padding-top:1%;
-    color: var(--ar-black);
+    color: var(--ar-red);
 }
 
 .ar-image__subcaption {
@@ -119,7 +119,7 @@
 
 .ar-slide__arrows
 {
-    padding-top: 1%;
+    padding-top: 2%;
 }
 
 .ar-slide__caption {
@@ -130,7 +130,7 @@
     font-size: 0.75em;
     letter-spacing: .04px;
     text-align: left;
-    padding-top:1%;
+    padding-top:2%;
     position: absolute;
     width: 85%;
     color: var(--ar-red);
