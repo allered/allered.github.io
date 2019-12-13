@@ -30,6 +30,9 @@ header {
 }
 
 .ar-darkmode_label {
+    position: relative;
+    top:-12px;
+    width: 50px;
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
     font-weight: 500;
@@ -167,7 +170,11 @@ input:checked+.ar-slider:before {
         margin-top: 30px;
         margin-left: 10px;
         height: 40px;
+    }
 
+    .ar-darkmode_label
+    {
+        display: none;
     }
 
     .ar-subbrand {
