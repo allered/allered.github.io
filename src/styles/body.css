@@ -66,6 +66,34 @@
     justify-content: center;
 }
 
+.ar-button {
+	background-color: var(--ar-white);
+	border-radius:4px;
+	border:2px solid var(--ar-red);
+	cursor:pointer;
+    color: var(--ar-black);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 150px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.7em;
+	padding:10px 10px;
+	text-decoration:none;
+}
+
+.ar-button:hover {
+	background-color: var(--ar-white);
+}
+
+.ar-button:active {
+	position:relative;
+	top:2px;
+}
+
+
 .ar-column {
     width: 700px;
     display: -ms-flexbox;
