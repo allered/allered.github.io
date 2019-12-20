@@ -51,6 +51,12 @@
     width: 600px;
 }
 
+#fs-frm input:hover
+{
+    position:relative;
+	top:1px;
+}
+
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
@@ -59,6 +65,8 @@
     outline-width: thin;
     outline-color: var(--ar-red);
     outline-offset: -1px;
+    position:relative;
+	top:1px;
 }
 
 #fs-frm [type="text"],

@@ -80,17 +80,23 @@
     font-weight: 600;
     font-style: normal;
     font-size: 0.7em;
-	padding:10px 10px;
+	padding:8px 10px;
 	text-decoration:none;
 }
 
 .ar-button:hover {
-	background-color: var(--ar-white);
+    background-color: var(--ar-white);
+    position:relative;
+    top:1px;
 }
 
 .ar-button:active {
-	position:relative;
-	top:2px;
+	background-color: var(--ar-red);
+    outline-color: var(--ar-red);
+    outline-offset: -1px;
+    position:relative;
+    top:1px;
+    color: var(--ar-white);
 }
 
 
