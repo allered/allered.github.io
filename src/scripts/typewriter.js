@@ -2,7 +2,7 @@
 var aText = new Array(
     "Hi :) my name is Alessandro Rossi",
     "I'm a photographer and Digital Designer from Cesenatico, Italy.",
-    "I design websites using Sketch, Webflow and Squarespace, I also do front-end development using CSS and Javascript.");
+    "Click the button below to view my Curriculum Vitae ");
     var iSpeed = 90; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array

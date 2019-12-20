@@ -197,6 +197,17 @@
     padding-top: 1em;
 }
 
+.ar-typewriter__text
+{
+    color: var(--ar-black);
+    font-family: var(--ar-fontfamily);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    line-height: 1.45;
+}
+
 /* END OF BODY STYLE */
 
 
