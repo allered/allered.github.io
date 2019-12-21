@@ -26,12 +26,12 @@ header {
     font-weight: 500;
     font-size: 0.9em;
     color: var(--ar-black);
-    margin-top: -8px;
+    margin-top: -3px;
 }
 
 .ar-darkmode_label {
     position: relative;
-    top:-12px;
+    top: -12px;
     width: 50px;
     background-color: transparent;
     font-family: var(--ar-fontfamily);
@@ -53,15 +53,15 @@ header {
     padding: 5px;
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
-    font-weight: 500;
-    font-size: 0.9em;
-    font-stretch: extra-condensed;
+    font-size: 0.85em;
+    font-weight: 700;
     color: var(--ar-black);
     height: 100%;
 }
 
 .ar-navlinks__item a {
-    color: currentColor;  /*EREDITA IL COLORE DALL'ELEMENTO PADRE SOPRA*/
+    color: currentColor;
+    /*EREDITA IL COLORE DALL'ELEMENTO PADRE SOPRA*/
     transition: all 0.3s ease 0s;
     font-weight: 500;
 }
@@ -173,8 +173,7 @@ input:checked+.ar-slider:before {
         height: 40px;
     }
 
-    .ar-darkmode_label
-    {
+    .ar-darkmode_label {
         display: none;
     }
 
@@ -190,8 +189,7 @@ input:checked+.ar-slider:before {
         z-index: 1;
     }
 
-    .ar-navbar
-    {
+    .ar-navbar {
         display: flex;
         position: fixed;
         align-items: center;
@@ -207,13 +205,12 @@ input:checked+.ar-slider:before {
         z-index: 1;
     }
 
-    .ar-navbar--active{
+    .ar-navbar--active {
         opacity: 1;
         visibility: visible;
     }
 
-    .ar-navbar--active .ar-navlinks__item
-    {
+    .ar-navbar--active .ar-navlinks__item {
         opacity: 1;
     }
 
@@ -222,25 +219,22 @@ input:checked+.ar-slider:before {
         flex-direction: column;
         position: relative;
         height: 35%;
-        width:100%;
+        width: 100%;
     }
 
-    .ar-navlinks__item
-    {
+    .ar-navlinks__item {
         background: none;
         text-align: center;
         opacity: 0;
         transition: opacity .2s ease-out .4s;
     }
 
-    .ar-navlinks__item--active
-    {
+    .ar-navlinks__item--active {
         color: var(--ar-white);
     }
 
-    .ar-switch
-    {
-        margin:0;
+    .ar-switch {
+        margin: 0;
     }
 }
 
