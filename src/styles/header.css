@@ -182,6 +182,7 @@ input:checked+.ar-slider:before {
         letter-spacing: .04px;
         margin-left: 10px;
         height: 45px;
+        margin-top:-8px;
     }
 
     .ar-hamburger {
