@@ -55,6 +55,7 @@ header {
     font-family: var(--ar-fontfamily);
     font-weight: 500;
     font-size: 0.9em;
+    font-stretch: extra-condensed;
     color: var(--ar-black);
     height: 100%;
 }
