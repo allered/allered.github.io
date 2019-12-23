@@ -288,6 +288,11 @@
         max-width: 350px;
     }
 
+    .ar-image__caption
+    {
+        margin-bottom: 15px;
+    }
+
     .ar-typewriter
     {
         width: 350px;
