@@ -170,6 +170,7 @@ input:checked+.ar-slider:before {
         margin-top: 30px;
         margin-left: 10px;
         height: 40px;
+        font-weight: 500;
     }
 
     .ar-darkmode_label {
