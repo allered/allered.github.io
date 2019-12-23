@@ -24,7 +24,7 @@
 /* DARK MODE CLASS SWITCH */
 .dark {
     --ar-black: #FBFBFB;
-    --ar-white: rgb(15,15,15);
+    --ar-white: #0F0F0F;
 }
 
 .dark .ar-image

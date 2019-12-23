@@ -23,7 +23,7 @@ header {
 .ar-subbrand {
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.9em;
     color: var(--ar-black);
     margin-top: -3px;
@@ -31,12 +31,12 @@ header {
 
 .ar-darkmode_label {
     position: relative;
-    top: -12px;
+    top: -13px;
     width: 50px;
     background-color: transparent;
     font-family: var(--ar-fontfamily);
-    font-weight: 500;
-    font-size: 0.65em;
+    font-weight: 600;
+    font-size: 0.7em;
     color: var(--ar-black);
 }
 
@@ -54,7 +54,7 @@ header {
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
     font-size: 0.85em;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--ar-black);
     height: 100%;
 }
@@ -63,7 +63,6 @@ header {
     color: currentColor;
     /*EREDITA IL COLORE DALL'ELEMENTO PADRE SOPRA*/
     transition: all 0.3s ease 0s;
-    font-weight: 500;
 }
 
 .ar-navlinks__item a:hover {
