@@ -2,7 +2,7 @@
 var aText = new Array(
     "Hi :) my name is Alessandro Rossi",
     "I'm a photographer and Digital Designer from Cesenatico, Italy.",
-    "Click the button below to view my Curriculum Vitae ");
+    "Click the button below to view my Curriculum Vitae.");
     var iSpeed = 90; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array
@@ -21,7 +21,7 @@ var aText = new Array(
      while ( iRow < iIndex ) {
       sContents += aText[iRow++] + '<br />';
      }
-     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
+     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + " |";
      console.log(iTextPos++ == iArrLength);
      if ( iTextPos++ == iArrLength ) {
       iTextPos = 0;
