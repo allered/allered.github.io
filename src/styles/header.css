@@ -23,7 +23,7 @@ header {
 .ar-subbrand {
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.9em;
     color: var(--ar-black);
     margin-top: -3px;
@@ -35,7 +35,7 @@ header {
     width: 50px;
     background-color: transparent;
     font-family: var(--ar-fontfamily);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.7em;
     color: var(--ar-black);
 }
@@ -54,7 +54,7 @@ header {
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
     font-size: 0.85em;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--ar-black);
     height: 100%;
 }
