@@ -9,7 +9,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3% 12% 6% 12%;
+    padding: 3% 35px 6% 35px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .ar-brand {
@@ -162,7 +164,6 @@ input:checked+.ar-slider:before {
 
     header {
         height: 150px;
-        padding: 3% 6% 6% 6%;
     }
 
     .ar-brand {
@@ -246,7 +247,6 @@ input:checked+.ar-slider:before {
 
     header {
         height: 150px;
-        padding: 5% 8% 6% 8%;
     }
 
     .ar-brand {
