@@ -9,24 +9,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3% 5% 6% 5%;
+    padding: 3% 12% 6% 12%;
 }
 
 .ar-brand {
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
-    font-weight: 600;
-    font-size: 2.5em;
+    font-weight: 700;
+    font-size: 2.3em;
     color: var(--ar-black);
 }
 
 .ar-subbrand {
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
-    font-weight: 500;
-    font-size: 0.9em;
+    font-weight: 600;
+    font-size: 0.8em;
     color: var(--ar-black);
-    margin-top: -3px;
+    margin-top: -5px;
 }
 
 .ar-darkmode_label {
@@ -35,7 +35,7 @@ header {
     width: 50px;
     background-color: transparent;
     font-family: var(--ar-fontfamily);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.7em;
     color: var(--ar-black);
 }
@@ -53,8 +53,8 @@ header {
     padding: 5px;
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
-    font-size: 0.85em;
-    font-weight: 500;
+    font-size: 0.80em;
+    font-weight: 600;
     color: var(--ar-black);
     height: 100%;
 }
@@ -162,6 +162,7 @@ input:checked+.ar-slider:before {
 
     header {
         height: 150px;
+        padding: 3% 6% 6% 6%;
     }
 
     .ar-brand {
@@ -178,11 +179,11 @@ input:checked+.ar-slider:before {
     }
 
     .ar-subbrand {
-        font-size: 0.7em;
+        font-size: 0.6em;
         letter-spacing: .04px;
         margin-left: 10px;
         height: 45px;
-        margin-top:-8px;
+        margin-top:-9px;
     }
 
     .ar-hamburger {
@@ -245,6 +246,7 @@ input:checked+.ar-slider:before {
 
     header {
         height: 150px;
+        padding: 5% 8% 6% 8%;
     }
 
     .ar-brand {
@@ -257,14 +259,70 @@ input:checked+.ar-slider:before {
 
     .ar-subbrand {
         font-size: 0.8em;
-        letter-spacing: .04px;
+        letter-spacing: .05px;
         margin-left: 10px;
         height: 75px;
+        margin-top: -5px;
+    }
+
+
+    .ar-hamburger {
+        display: inline-flex;
+        z-index: 1;
+        margin-top: -30px;
+    }
+
+    .ar-darkmode_label
+    {
+        margin-left:-4px;
+    }
+
+    .ar-navbar {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: var(--ar-red);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s ease-out, visibility .5s ease-out;
+        z-index: 1;
+    }
+
+    .ar-navbar--active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .ar-navbar--active .ar-navlinks__item {
+        opacity: 1;
     }
 
     .ar-navlinks {
-        font-size: 0.8em;
-        height: 50px;
-        width: 280px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 35%;
+        width: 100%;
     }
+
+    .ar-navlinks__item {
+        background: none;
+        text-align: center;
+        opacity: 0;
+        transition: opacity .2s ease-out .4s;
+    }
+
+    .ar-navlinks__item--active {
+        color: var(--ar-white);
+    }
+
+    .ar-switch {
+        margin: 0;
+    }
+}
 }
