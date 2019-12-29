@@ -53,6 +53,12 @@
 
 /* BODY STYLE */
 .ar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ar-container__photo {
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
