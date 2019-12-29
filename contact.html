@@ -7,8 +7,10 @@
   <meta name="Alessandro Rossi Portfolio" content="Photography Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="This is the website of Alessandro Rossi, Photographer and Digital Designer from Cesenatico,Italy.">
-  <meta name="keywords" content="photo, design, portrait, commercial, designer, relio, fujifilm, website, front-end, coding, apple, development, sketch, design">
+  <meta name="description"
+    content="This is the website of Alessandro Rossi, Photographer and Digital Designer from Cesenatico,Italy.">
+  <meta name="keywords"
+    content="photo, design, portrait, commercial, designer, relio, fujifilm, website, front-end, coding, apple, development, sketch, design">
   <title>Alessandro Rossi - Photographer | Digital Designer</title>
   <link rel="stylesheet" href="vendors/hamburgers/hamburgers.css">
   <link rel="stylesheet" href="vendors/normalize-css/reset.css">
@@ -19,7 +21,8 @@
   <link rel="stylesheet" href="src/styles/form.css">
   <link rel="shortcut icon" href="/dist/images/icons/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/dist/images/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+</head>
 
 <title>Contact Page</title>
 
@@ -69,41 +72,46 @@
   </header>
 
   <!-- BODY -->
-  <div class="ar-container">
-    <!-- BIOGRAPHY -->
-    <div class="ar-row">
-      <div class="ar-column">
-        <img class="ar-image" src="dist/images/portrait/Alessandro.jpg" alt="Alessandro Rossi | @allered">
-        <br>
-        <p class="ar-typewriter__text ar-typewriter"></p>
-        <br>
-        <br>
-        <a href="/dist/images/cv/CV-New.jpg" target="_blank" class="ar-button">VIEW CV</a>
-        <br>
-        <br>
-        <!-- CONTACT FORM -->
-        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/alleredph@gmail.com"
-          method="post">
-          <fieldset id="fs-frm-inputs">
-            <input type="text" name="name" id="full-name" placeholder=" " required="">
-            <label for="full-name">Name</label>
-            <input type="email" name="_replyto" id="email-address" placeholder=" " required="">
-            <label for="email-address">Email</label>
-            <input type="telephone" name="telephone" id="telephone" placeholder=" ">
-            <label for="telephone">Phone</label>
-            <textarea rows="6" name="complaint" id="complaint" placeholder=" " required=""></textarea>
-            <label for="complaint">Message</label>
-            <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
-          </fieldset>
-          <input type="submit" value="Send">
-          <br>
-          <br>
-          <p style="text-align:center;" class="ar-image__caption"> Mail: <span id="mail"
-              class="ar-image__subcaption">alleredph@gmail.com</span></p>
-        </form>
-      </div>
+
+  
+  <div class="ar-container-contact">
+
+    <div class="ar-column__portrait">
+      <img class="ar-image__portrait" src="dist/images/portrait/Alessandro.jpg" alt="Alessandro Rossi | @allered">
+      <br>
+      <p class="ar-typewriter__text ar-typewriter"></p>
+      <br>
+      <br>
+      <a href="/dist/images/cv/CV-New.jpg" target="_blank" class="ar-button">VIEW CV</a>
+      <br>
+      <br>
     </div>
+
+    <div class="ar-column__form">
+      <!-- CONTACT FORM -->
+      <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/alleredph@gmail.com"
+        method="post">
+        <fieldset id="fs-frm-inputs">
+          <input type="text" name="name" id="full-name" placeholder=" " required="">
+          <label for="full-name">Name</label>
+          <input type="email" name="_replyto" id="email-address" placeholder=" " required="">
+          <label for="email-address">Email</label>
+          <input type="telephone" name="telephone" id="telephone" placeholder=" ">
+          <label for="telephone">Phone</label>
+          <textarea rows="6" name="complaint" id="complaint" placeholder=" " required=""></textarea>
+          <label for="complaint">Message</label>
+          <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+        </fieldset>
+        <input type="submit" value="Send">
+        <br>
+        <br>
+        <p style="text-align:center;" class="ar-image__caption"> Mail: <span id="mail"
+            class="ar-image__subcaption">alleredph@gmail.com</span></p>
+      </form>
+    </div>
+
   </div>
+
   <!-- FOOTER -->
   <footer class="ar-footer">
 

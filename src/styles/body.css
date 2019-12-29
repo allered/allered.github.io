@@ -58,6 +58,17 @@
     overflow: hidden;
 }
 
+.ar-container-contact {
+    display: flex;
+    background-color: var(--ar-white);
+    border-radius: 12px;
+    max-width: 1400px;
+    margin: 40px;
+    -webkit-box-shadow: 6px 6px 35px -2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 6px 6px 35px -2px rgba(0, 0, 0, 0.15);
+    box-shadow: 6px 6px 35px -2px rgba(0, 0, 0, 0.15);
+}
+
 .ar-row {
     display: -ms-flexbox;
     display: flex;
@@ -67,35 +78,35 @@
 }
 
 .ar-button {
-	background-color: var(--ar-white);
-	border-radius:4px;
-	border:2px solid var(--ar-red);
-	cursor:pointer;
+    background-color: var(--ar-white);
+    border-radius: 4px;
+    border: 2px solid var(--ar-red);
+    cursor: pointer;
     color: var(--ar-black);
     display: flex;
     justify-content: center;
     align-self: center;
-    text-align: center;
+    margin: 0 auto;
     width: 100px;
     font-weight: 600;
     font-style: normal;
     font-size: 0.7em;
-    padding:8px 10px;
-	text-decoration:none;
+    padding: 8px 10px;
+    text-decoration: none;
 }
 
 .ar-button:hover {
     background-color: var(--ar-white);
-    position:relative;
-    top:1px;
+    position: relative;
+    top: 1px;
 }
 
 .ar-button:active {
-	background-color: var(--ar-red);
+    background-color: var(--ar-red);
     outline-color: var(--ar-red);
     outline-offset: -1px;
-    position:relative;
-    top:1px;
+    position: relative;
+    top: 1px;
     color: var(--ar-white);
 }
 
@@ -108,6 +119,18 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+}
+
+.ar-column__portrait {
+    margin: 0 auto;
+    max-width: 800px;
+    margin: 40px;
+}
+}
+
+.ar-column__form {
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .ar-container__glide {
@@ -125,6 +148,12 @@
     border-radius: 12px;
 }
 
+.ar-image__portrait {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+}
+
 .ar-image__caption {
     text-transform: uppercase;
     font-family: var(--ar-fontfamily);
@@ -134,7 +163,7 @@
     letter-spacing: .04px;
     justify-content: flex-start;
     padding-bottom: 5%;
-    padding-top:1%;
+    padding-top: 1%;
     color: var(--ar-red);
 }
 
@@ -149,8 +178,7 @@
     color: var(--ar-black);
 }
 
-.ar-slide__arrows
-{
+.ar-slide__arrows {
     padding-top: 2%;
 }
 
@@ -162,7 +190,7 @@
     font-size: 0.7em;
     letter-spacing: .04px;
     text-align: left;
-    padding-top:2%;
+    padding-top: 2%;
     position: absolute;
     width: 85%;
     color: var(--ar-red);
@@ -182,8 +210,7 @@
     color: var(--ar-red);
 }
 
-.ar-title
-{
+.ar-title {
     display: flex;
     align-items: center;
     font-family: var(--ar-fontfamily);
@@ -195,17 +222,12 @@
 
 .ar-typewriter {
     color: var(--ar-black);
-    display: inline-block;
     text-align: center;
-    padding: 55px;
-    width: 20em;
-    width: 100%;
     height: 50px;
-    padding-top: 1em;
+    padding-top: 2em;
 }
 
-.ar-typewriter__text
-{
+.ar-typewriter__text {
     color: var(--ar-black);
     font-family: var(--ar-fontfamily);
     font-weight: 600;
@@ -247,10 +269,10 @@
 
 /*VIEW ON SMARTPHONE*/
 @media only screen and (max-width:450px) {
-    
 
-    .ar-button{
-        margin-top:50px;
+
+    .ar-button {
+        margin-top: 50px;
     }
 
     .ar-footer {
@@ -280,6 +302,11 @@
         max-width: 300px;
     }
 
+    .ar-container-contact {
+        display: block;
+        margin: 20px;
+    }
+
     .ar-column {
         width: auto;
         max-width: 350px;
@@ -290,15 +317,24 @@
         max-width: 350px;
     }
 
-    .ar-image__caption
-    {
+    .ar-image__caption {
         margin-bottom: 15px;
+    }
+
+    .ar-image__portrait {
+        margin-top: 20px;
     }
 
     .ar-typewriter
     {
+        max-width: 60vw;
+    }
+
+    .ar-typewriter__text {
         width: 350px;
         font-size: 0.7em;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -332,9 +368,31 @@
         max-width: 450px;
     }
 
+    .ar-container-contact {
+        display: block;
+        margin:30px;
+    }
+
     .ar-column {
         width: auto;
         max-width: 450px;
+    }
+
+    .ar-image__portrait {
+        margin-top: 30px;
+    }
+
+
+    .ar-typewriter
+    {
+        max-width: 60vw;
+
+    }
+
+    .ar-typewriter__text {
+        font-size: 0.7em;
+        display: block;
+        margin: 0 auto;
     }
 }
 
