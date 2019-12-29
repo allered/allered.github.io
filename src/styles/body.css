@@ -184,6 +184,20 @@
     color: var(--ar-black);
 }
 
+.ar-mail
+{
+    text-transform: uppercase;
+    font-family: var(--ar-fontfamily);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.7em;
+    letter-spacing: .045px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--ar-black);
+    padding-bottom: 5px;
+}
+
 .ar-slide__arrows {
     padding-top: 2%;
 }
@@ -398,7 +412,6 @@
 
     .ar-typewriter {
         max-width: 60vw;
-
     }
 
     .ar-typewriter__text {
