@@ -60,7 +60,7 @@
 
 .ar-container-contact {
     display: flex;
-    overflow:hidden;
+    overflow: hidden;
     background-color: var(--ar-white);
     border-radius: 12px;
     max-width: 1400px;
@@ -84,14 +84,13 @@
     border: 2px solid var(--ar-red);
     cursor: pointer;
     color: var(--ar-black);
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    display: block;
     margin: 0 auto;
     width: 100px;
     font-weight: 600;
     font-style: normal;
     font-size: 0.7em;
+    text-align: center;
     padding: 8px 10px;
     text-decoration: none;
 }
@@ -137,7 +136,7 @@
     justify-content: center;
     margin: 0 auto;
     max-width: 800px;
-    background-color: rgba(215,7,10, 0.9);
+    background-color: rgba(215, 7, 10, 0.9);
 }
 
 .ar-container__glide {
@@ -318,10 +317,9 @@
         width: auto;
         max-width: 350px;
     }
-    
-    .ar-column__form
-    {
-        background-color:var(--ar-white);
+
+    .ar-column__form {
+        background-color: var(--ar-white);
     }
 
     .ar-row {
@@ -337,8 +335,7 @@
         margin-top: 20px;
     }
 
-    .ar-typewriter
-    {
+    .ar-typewriter {
         max-width: 60vw;
     }
 
@@ -382,7 +379,7 @@
 
     .ar-container-contact {
         display: block;
-        margin:30px;
+        margin: 30px;
     }
 
     .ar-column {
@@ -390,9 +387,8 @@
         max-width: 450px;
     }
 
-    .ar-column__form
-    {
-        background-color:var(--ar-white);
+    .ar-column__form {
+        background-color: var(--ar-white);
     }
 
     .ar-image__portrait {
@@ -400,8 +396,7 @@
     }
 
 
-    .ar-typewriter
-    {
+    .ar-typewriter {
         max-width: 60vw;
 
     }
