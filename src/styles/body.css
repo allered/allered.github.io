@@ -60,6 +60,7 @@
 
 .ar-container-contact {
     display: flex;
+    overflow:hidden;
     background-color: var(--ar-white);
     border-radius: 12px;
     max-width: 1400px;
@@ -122,15 +123,21 @@
 }
 
 .ar-column__portrait {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     max-width: 800px;
     margin: 40px;
 }
-}
 
 .ar-column__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     max-width: 800px;
+    background-color: rgba(215,7,10, 0.9);
 }
 
 .ar-container__glide {
@@ -311,6 +318,11 @@
         width: auto;
         max-width: 350px;
     }
+    
+    .ar-column__form
+    {
+        background-color:var(--ar-white);
+    }
 
     .ar-row {
         width: auto;
@@ -376,6 +388,11 @@
     .ar-column {
         width: auto;
         max-width: 450px;
+    }
+
+    .ar-column__form
+    {
+        background-color:var(--ar-white);
     }
 
     .ar-image__portrait {
