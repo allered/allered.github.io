@@ -346,6 +346,10 @@
         margin: 15px;
     }
 
+    .ar-container-photo {
+        margin: 15px;
+    }
+
     .ar-column {
         width: auto;
         max-width: 350px;
