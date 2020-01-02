@@ -379,6 +379,11 @@
         margin-top: 20px;
     }
 
+    .ar-column__portrait
+    {
+        margin:10px;
+    }
+
     .ar-typewriter {
         max-width: 300px;
     }
