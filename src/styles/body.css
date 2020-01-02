@@ -189,7 +189,9 @@
     justify-content: flex-start;
     padding-bottom: 5%;
     padding-top: 1%;
+    padding-left:10px;
     color: var(--ar-red);
+
 }
 
 .ar-image__subcaption {
