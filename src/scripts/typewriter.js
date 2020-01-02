@@ -21,7 +21,7 @@ var aText = new Array(
       sContents += aText[iRow++] + '<br />';
      }
      destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + " |";
-     console.log(iTextPos++ == iArrLength);
+    //  console.log(iTextPos++ == iArrLength);
      if ( iTextPos++ == iArrLength ) {
       iTextPos = 0;
       iIndex++;

@@ -340,11 +340,10 @@
 
     .ar-container-contact {
         display: block;
-        margin: 15px;
+        margin: 35px 15px;
         -webkit-box-shadow: -4px 17px 50px -22px rgba(64,62,64,0.3);
         -moz-box-shadow: -4px 17px 50px -22px rgba(64,62,64,0.3);
         box-shadow: -4px 17px 50px -22px rgba(64,62,64,0.3);
-        
     }
 
     .ar-container-website
@@ -363,7 +362,8 @@
     }
 
     .ar-column__form {
-        background-color: var(--ar-white);
+        /* background-color: var(--ar-white); */
+        margin-top:25px;
     }
 
     .ar-row {
