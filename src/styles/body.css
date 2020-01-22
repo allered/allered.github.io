@@ -360,7 +360,7 @@
     }
 
     .ar-container-photo {
-        margin: 15px;
+        margin: 0 auto;
     }
 
     .ar-column {
@@ -375,7 +375,8 @@
 
     .ar-row {
         width: auto;
-        max-width: 350px;
+        max-width: 320px;
+        margin:0 auto;
     }
 
     .ar-image__caption {
@@ -404,6 +405,11 @@
 
 /*VIEW ON TABLET*/
 @media only screen and (min-width: 451px) and (max-width:800px) {
+
+    header
+    {
+        margin-top:30px;
+    }
 
     .ar-footer {
         font-size: 0.6em;
@@ -462,10 +468,14 @@
     }
 }
 
-/*VIEW ON DESKTOP*/
-@media only screen and (max-width:961px) {}
-
+/*VIEW ON IPAD PRO*/
 @media (min-width: 1024px) {
+
+    header
+    {
+        margin-top:30px;
+    }
+
     .ar-container__glide {
         max-width: 800px;
         margin: 0 auto;
