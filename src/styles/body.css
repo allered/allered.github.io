@@ -83,9 +83,7 @@
     border-radius: 12px;
     max-width: 1400px;
     margin: 40px;
-    -webkit-box-shadow: -4px 17px 50px -22px rgba(64,62,64,0.3);
-    -moz-box-shadow: -4px 17px 50px -22px rgba(64,62,64,0.3);
-    box-shadow: -4px 17px 50px -22px rgba(64,62,64,0.3);
+    box-shadow: 0 10px 25px 0 rgba(34, 33, 33, 0.2);
     
 }
 
@@ -166,6 +164,15 @@
 }
 
 .ar-image {
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px 0 rgba(34, 33, 33, 0.2);
+}
+
+.ar-image__web {
     vertical-align: middle;
     text-align: center;
     margin: 0 auto;
