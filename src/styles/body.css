@@ -59,9 +59,9 @@
 }
 
 .ar-container__photo {
-    max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
+    max-width: 800px;
 }
 
 .ar-container-website {
