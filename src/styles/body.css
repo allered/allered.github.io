@@ -195,7 +195,20 @@
     padding-top: 1%;
     padding-left:10px;
     color: var(--ar-red);
+}
 
+.ar-image__webcaption {
+    text-transform: uppercase;
+    font-family: var(--ar-fontfamily);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.7em;
+    letter-spacing: .04px;
+    justify-content: flex-start;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    padding-left:15px;
+    color: var(--ar-red);
 }
 
 .ar-image__subcaption {
@@ -432,7 +445,7 @@
 
     .ar-container {
         width: auto;
-        max-width: 650px;
+        max-width: 750px;
     }
 
     .ar-container-contact {
@@ -442,7 +455,7 @@
 
     .ar-column {
         width: auto;
-        max-width: 450px;
+        max-width: 550px;
     }
 
     .ar-column__form {
