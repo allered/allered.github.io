@@ -383,6 +383,12 @@
         margin-top:25px;
     }
 
+    #fs-frm input, #fs-frm select, #fs-frm button, #fs-frm textarea
+    {
+        background-color: #FBFBFB !important;
+        color: black !important;
+    }
+
     .ar-row {
         width: auto;
         max-width: 320px;
@@ -465,6 +471,7 @@
     #fs-frm input, #fs-frm select, #fs-frm button, #fs-frm textarea
     {
         background-color: #FBFBFB !important;
+        color: black !important;
     }
 
     .ar-image__portrait {
