@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Alessandro Rossi Portfolio" content="Photography Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="This is the website of Alessandro Rossi, Photographer and Digital Designer from Cesenatico,Italy.">
+  <meta name="keywords"
+    content="photo, design, portrait, commercial, designer, relio, fujifilm, website, front-end, coding, apple, development, sketch, design">
+  <title>Alessandro Rossi - Photographer | Digital Designer</title>
+  <link rel="stylesheet" href="vendors/hamburgers/hamburgers.css">
+  <link rel="stylesheet" href="vendors/normalize-css/reset.css">
+  <link rel="stylesheet" href="src/styles/vars.css">
+  <link rel="stylesheet" href="src/styles/header.css">
+  <link rel="stylesheet" href="src/styles/body.css">
+  <link rel="stylesheet" href="src/styles/backtotop.css">
+  <link rel="stylesheet" href="src/styles/form.css">
+  <link rel="shortcut icon" href="/dist/images/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/dist/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<title>Contact Page</title>
+
+
+<body class="ar-body">
+  <div class="ar-body__frame ar-body__frame--left"></div>
+  <div class="ar-body__frame ar-body__frame--top"></div>
+  <div class="ar-body__frame ar-body__frame--right"></div>
+  <div class="ar-body__frame ar-body__frame--bottom"></div>
+
+  <header>
+
+    <a href="index.html">
+      <div class="ar-brand">ALLERED</div>
+      <div class="ar-subbrand">PHOTOGRAPHER | DIGITAL DESIGNER</div>
+    </a>
+
+    <nav class="ar-navbar" id="navbar">
+
+      <ul class="ar-navlinks">
+        <li class="ar-navlinks__item">
+          <a class="ar-navlink" href="/index.html">PORTFOLIO</a>
+        </li>
+        <li class="ar-navlinks__item">
+          <a class="ar-navlink" href="/wedding.html">WEDDING</a>
+        </li>
+        <li class="ar-navlinks__item">
+          <a class="ar-navlink" href="/webdesign.html">WEBSITES</a>
+        </li>
+        <li class="ar-navlinks__item ar-navlinks__item--active">
+          <a class="ar-navlink" href="/contact.html">ABOUT</a>
+        </li>
+        <!-- DARK MODE SWITCH-->
+        <li class="ar-navlinks__item ">
+          <label class="ar-switch" for="checkbox">
+            <p class="ar-darkmode_label">Click Me!</p>
+            <input type="checkbox" id="checkbox" />
+            <div class="ar-slider round"></div>
+        </li>
+      </ul>
+    </nav>
+    <a class="hamburger hamburger--spring ar-hamburger" href="#navbar" data-toggle="navbar">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </a>
+  </header>
+
+  <!-- BODY -->
+
+  <div class="ar-container">
+    <div class="ar-container-contact">
+
+      <div class="ar-column__portrait">
+        <img class="ar-image__portrait" src="dist/images/portrait/Alessandro.jpg" alt="Alessandro Rossi | @allered">
+        <br>
+        <p class="ar-typewriter__text ar-typewriter"></p>
+        <br>
+        <br>
+        <a href="/dist/images/cv/CV-New.jpg" target="_blank" class="ar-button">VIEW CV</a>
+      </div>
+
+      <div class="ar-column__form">
+        <!-- CONTACT FORM -->
+        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/alleredph@gmail.com"
+          method="post">
+          <fieldset id="fs-frm-inputs">
+            <input type="text" name="name" id="full-name" placeholder=" " required="">
+            <label for="full-name">Name</label>
+            <input type="email" name="_replyto" id="email-address" placeholder=" " required="">
+            <label for="email-address">Email</label>
+            <input type="telephone" name="telephone" id="telephone" placeholder=" ">
+            <label for="telephone">Phone</label>
+            <textarea rows="6" name="complaint" id="complaint" placeholder=" " required=""></textarea>
+            <label for="complaint">Message</label>
+            <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+          </fieldset>
+          <input type="submit" value="Send">
+          <br>
+          <br>
+        </form>
+        <a class="ar-mail" href="mailto:alleredph@gmail.com">alleredph@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="ar-footer">
+
+    <div class="ar-footer__socials">
+      <a class="ar-social" href="http://instagram.com/allered" target="_blank" rel="noopener">
+        <img class="ar-social__image" src="dist/images/icons/instagram.svg" alt="Instagram link"></a>
+    </div>
+    <div class="ar-footer__identity">
+      <p>ALESSANDRO ROSSI</p>
+    </div>
+
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="ar-backtotop" title="Go to top">
+    <span class="ar-backtotop__arrow ar-backtotop__arrow--top"></span>
+  </button>
+
+  <!-- Link a javascript -->
+  <script src="src/scripts/app.js"></script>
+  <script src="src/scripts/backtotop.js"></script>
+  <script src="src/scripts/darkmode.js"></script>
+  <script src="src/scripts/hamburgers.js"></script>
+  <script src="src/scripts/typewriter.js"></script>
+</body>
+
+</html>
