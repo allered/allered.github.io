@@ -464,10 +464,6 @@
         max-width: 550px;
     }
 
-    .ar-column__form {
-        /* background-color: var(--ar-white); */
-    }
-
     #fs-frm input, #fs-frm select, #fs-frm button, #fs-frm textarea
     {
         background-color: #FBFBFB !important;
