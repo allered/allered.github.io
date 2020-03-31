@@ -81,7 +81,7 @@
     max-width: 1400px;
     margin: 40px;
     box-shadow: 0 10px 25px 0 rgba(34, 33, 33, 0.2);
-    
+
 }
 
 .ar-row {
@@ -193,7 +193,7 @@
     justify-content: flex-start;
     padding-bottom: 5%;
     padding-top: 1%;
-    padding-left:10px;
+    padding-left: 10px;
     color: var(--ar-red);
 }
 
@@ -207,7 +207,7 @@
     justify-content: flex-start;
     padding-bottom: 5%;
     padding-top: 1%;
-    padding-left:15px;
+    padding-left: 15px;
     color: var(--ar-red);
 }
 
@@ -222,8 +222,7 @@
     color: var(--ar-black);
 }
 
-.ar-mail
-{
+.ar-mail {
     text-transform: uppercase;
     font-family: var(--ar-fontfamily);
     font-weight: 600;
@@ -358,13 +357,12 @@
     .ar-container-contact {
         display: block;
         margin: 35px 15px;
-        -webkit-box-shadow: -4px 17px 50px -22px rgba(64,62,64,0.3);
-        -moz-box-shadow: -4px 17px 50px -22px rgba(64,62,64,0.3);
-        box-shadow: -4px 17px 50px -22px rgba(64,62,64,0.3);
+        -webkit-box-shadow: -4px 17px 50px -22px rgba(64, 62, 64, 0.3);
+        -moz-box-shadow: -4px 17px 50px -22px rgba(64, 62, 64, 0.3);
+        box-shadow: -4px 17px 50px -22px rgba(64, 62, 64, 0.3);
     }
 
-    .ar-container-website
-    {
+    .ar-container-website {
         display: block;
         margin: 15px;
     }
@@ -380,11 +378,13 @@
 
     .ar-column__form {
         /* background-color: var(--ar-white); */
-        margin-top:25px;
+        margin-top: 25px;
     }
 
-    #fs-frm input, #fs-frm select, #fs-frm button, #fs-frm textarea
-    {
+    #fs-frm input,
+    #fs-frm select,
+    #fs-frm button,
+    #fs-frm textarea {
         background-color: #FBFBFB !important;
         color: black !important;
     }
@@ -392,7 +392,7 @@
     .ar-row {
         width: auto;
         max-width: 320px;
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .ar-image__caption {
@@ -403,9 +403,8 @@
         margin-top: 20px;
     }
 
-    .ar-column__portrait
-    {
-        margin:10px;
+    .ar-column__portrait {
+        margin: 10px;
     }
 
     .ar-typewriter {
@@ -422,9 +421,8 @@
 /*VIEW ON TABLET*/
 @media only screen and (min-width: 451px) and (max-width:800px) {
 
-    header
-    {
-        margin-top:30px;
+    header {
+        margin-top: 30px;
     }
 
     .ar-footer {
@@ -464,8 +462,10 @@
         max-width: 550px;
     }
 
-    #fs-frm input, #fs-frm select, #fs-frm button, #fs-frm textarea
-    {
+    #fs-frm input,
+    #fs-frm select,
+    #fs-frm button,
+    #fs-frm textarea {
         background-color: #FBFBFB !important;
         color: black !important;
     }
@@ -489,9 +489,8 @@
 /*VIEW ON IPAD PRO*/
 @media (min-width: 1024px) {
 
-    header
-    {
-        margin-top:30px;
+    header {
+        margin-top: 30px;
     }
 
     .ar-container__glide {
