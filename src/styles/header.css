@@ -17,7 +17,7 @@ header {
 .ar-brand {
     background-color: var(--ar-white);
     font-family: var(--ar-fontfamily);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2.3em;
     color: var(--ar-black);
 }
