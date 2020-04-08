@@ -64,7 +64,6 @@
     max-width: 800px;
 }
 
-
 .ar-container-contact {
     display: flex;
     overflow: hidden;
@@ -348,7 +347,6 @@
 
 /*VIEW ON SMARTPHONE*/
 @media only screen and (max-width:450px) {
-
 
     .ar-button {
         margin-top: 50px;
