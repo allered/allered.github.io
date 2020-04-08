@@ -294,18 +294,19 @@
 }
 
 .ar-website-header {
+    color: #FBFBFB;
     position: absolute;
     top: 27px;
     left: 27px;
     right: 21px;
     font-family: "Montserrat";
-    font-size: 22px;
     font-weight: semibold;
     word-wrap: break-word;
     max-width: 200px;
 }
 
 .ar-website-footer {
+    color: #FBFBFB;
     position: absolute;
     bottom: 25px;
     left: 27px;
@@ -408,11 +409,13 @@
     .ar-website-header {
         font-size: 0.9rem;
         max-width: 130px;
+        color: #FBFBFB;
     }
 
     .ar-website-footer {
         font-size: 0.7rem;
         max-width: 300px;
+        color: #FBFBFB;
     }
 
     .ar-container-photo {
