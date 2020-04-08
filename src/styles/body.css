@@ -289,30 +289,39 @@
     box-shadow: 0 0px 25px 0 rgba(26, 25, 25, 0.3);
 }
 
-.ar-website-link {
+.ar-website-tile a {
     cursor: pointer;
 }
 
 .ar-website-header {
-    color: #FBFBFB;
     position: absolute;
-    top: 27px;
-    left: 27px;
-    right: 21px;
-    font-family: "Montserrat";
-    font-weight: semibold;
-    word-wrap: break-word;
+    top: 25px;
+    left: 25px;
+    right: 20px;
     max-width: 200px;
 }
 
-.ar-website-footer {
+.ar-website-header h3{
     color: #FBFBFB;
+    font-family: var(--ar-fontfamily);
+    word-wrap: break-word;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.ar-website-footer {
     position: absolute;
     bottom: 25px;
-    left: 27px;
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-weight: semibold;
+    left: 25px;
+}
+
+.ar-website-footer p
+{
+    color: #FBFBFB;
+    font-family: var(--ar-fontfamily);
+    word-wrap: break-word;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 
