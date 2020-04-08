@@ -28,7 +28,7 @@ header {
     font-weight: 600;
     font-size: 0.8em;
     color: var(--ar-black);
-    margin-top: -5px;
+    margin-top:-25px;
 }
 
 .ar-darkmode_label {
