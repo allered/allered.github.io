@@ -356,7 +356,6 @@
         box-shadow: -4px 17px 50px -22px rgba(64, 62, 64, 0.3);
     }
 
-
     .ar-website-container {
         display: block;
         margin: 0 auto;
@@ -367,7 +366,7 @@
 
     .ar-website-row {
         display: block;
-        max-width: 80vw;
+        width:100%;
         margin: 0;
     }
 
@@ -375,7 +374,7 @@
         display: block;
         margin: 0 auto;
         margin-bottom: 10px;
-        width: 90vw;
+        width:100%;
     }
 
     .ar-website-header {
