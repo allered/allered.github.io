@@ -253,7 +253,7 @@
 
 .ar-website-tile:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0px 25px 0 rgba(26, 25, 25, 0.3);
+    /* box-shadow: 0 0px 25px 0 rgba(26, 25, 25, 0.3); */
 }
 
 .ar-website-tile a {
