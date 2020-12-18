@@ -165,9 +165,8 @@
     font-size: 0.7em;
     letter-spacing: .04px;
     justify-content: flex-start;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
     padding-top: 1%;
-    padding-left: 10px;
     color: var(--ar-red);
 }
 
