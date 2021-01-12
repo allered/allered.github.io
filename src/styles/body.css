@@ -72,7 +72,6 @@
     /* border-radius: 12px; */
     max-width: 1400px;
     margin: 40px;
-    box-shadow: 0 10px 25px 0 rgba(34, 33, 33, 0.2);
 }
 
 .ar-row {
@@ -351,9 +350,7 @@
     .ar-container-contact {
         display: block;
         margin: 35px 15px;
-        -webkit-box-shadow: -4px 17px 50px -22px rgba(64, 62, 64, 0.3);
-        -moz-box-shadow: -4px 17px 50px -22px rgba(64, 62, 64, 0.3);
-        box-shadow: -4px 17px 50px -22px rgba(64, 62, 64, 0.3);
+        border: 4px solid #DA2631;
     }
 
     .ar-website-container {
